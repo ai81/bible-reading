@@ -1,1099 +1,594 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>07EA3E7744AADF36F7B1378F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Bible Reading.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1B4BA449E9C625F90BEC813A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2A92DABC3043F9B819AD2F9B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>480EC891FAAA37415B67DBD7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6323E1F85C0C5762C972255</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5811ED0F41D8A2FB61289511</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Bible ReadingTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5BDF402CBB7E18012C684EA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A9B34C421E181855004FDFD6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A9B34C4D1E181855004FDFD6</string>
-				<string>A9B34C621E181855004FDFD6</string>
-				<string>A9B34C4C1E181855004FDFD6</string>
-				<string>C3390E2F72BC80A28FA2F396</string>
-				<string>C9830D7257D6AC8A0F816758</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C431E181855004FDFD6</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0820</string>
-				<key>LastUpgradeCheck</key>
-				<string>0820</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Anton Ivanov</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>A9B34C4A1E181855004FDFD6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.2.1</string>
-						<key>DevelopmentTeam</key>
-						<string>WHWKX5DYT5</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-					<key>A9B34C5E1E181855004FDFD6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.2.1</string>
-						<key>DevelopmentTeam</key>
-						<string>WHWKX5DYT5</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>A9B34C4A1E181855004FDFD6</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>A9B34C461E181855004FDFD6</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>A9B34C421E181855004FDFD6</string>
-			<key>productRefGroup</key>
-			<string>A9B34C4C1E181855004FDFD6</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>A9B34C4A1E181855004FDFD6</string>
-				<string>A9B34C5E1E181855004FDFD6</string>
-			</array>
-		</dict>
-		<key>A9B34C461E181855004FDFD6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A9B34C661E181855004FDFD6</string>
-				<string>A9B34C671E181855004FDFD6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A9B34C471E181855004FDFD6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A9B34C511E181855004FDFD6</string>
-				<string>A9B34C4F1E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A9B34C481E181855004FDFD6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E63DE010E221D715E28D3948</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A9B34C491E181855004FDFD6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A9B34C591E181855004FDFD6</string>
-				<string>A9B34C561E181855004FDFD6</string>
-				<string>A9B34C541E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A9B34C4A1E181855004FDFD6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A9B34C681E181855004FDFD6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D2622CB7320C043909725D1F</string>
-				<string>A9B34C471E181855004FDFD6</string>
-				<string>A9B34C481E181855004FDFD6</string>
-				<string>A9B34C491E181855004FDFD6</string>
-				<string>2A92DABC3043F9B819AD2F9B</string>
-				<string>A5BDF402CBB7E18012C684EA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Bible Reading</string>
-			<key>productName</key>
-			<string>Bible Reading</string>
-			<key>productReference</key>
-			<string>A9B34C4B1E181855004FDFD6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>A9B34C4B1E181855004FDFD6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Bible Reading.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A9B34C4C1E181855004FDFD6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A9B34C4B1E181855004FDFD6</string>
-				<string>A9B34C5F1E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C4D1E181855004FDFD6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A9B34C4E1E181855004FDFD6</string>
-				<string>A9B34C501E181855004FDFD6</string>
-				<string>A9B34C521E181855004FDFD6</string>
-				<string>A9B34C551E181855004FDFD6</string>
-				<string>A9B34C571E181855004FDFD6</string>
-				<string>A9B34C5A1E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Bible Reading</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C4E1E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C4F1E181855004FDFD6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A9B34C4E1E181855004FDFD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9B34C501E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C511E181855004FDFD6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A9B34C501E181855004FDFD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9B34C521E181855004FDFD6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A9B34C531E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C531E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C541E181855004FDFD6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A9B34C521E181855004FDFD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9B34C551E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C561E181855004FDFD6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A9B34C551E181855004FDFD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9B34C571E181855004FDFD6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A9B34C581E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C581E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C591E181855004FDFD6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A9B34C571E181855004FDFD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9B34C5A1E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C5B1E181855004FDFD6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A9B34C641E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A9B34C5C1E181855004FDFD6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>480EC891FAAA37415B67DBD7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A9B34C5D1E181855004FDFD6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A9B34C5E1E181855004FDFD6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A9B34C6B1E181855004FDFD6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E24F9EC1616FBC5EBB29DB55</string>
-				<string>A9B34C5B1E181855004FDFD6</string>
-				<string>A9B34C5C1E181855004FDFD6</string>
-				<string>A9B34C5D1E181855004FDFD6</string>
-				<string>1B4BA449E9C625F90BEC813A</string>
-				<string>D9F9E3018E14772B0DF2C07C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>A9B34C611E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Bible ReadingTests</string>
-			<key>productName</key>
-			<string>Bible ReadingTests</string>
-			<key>productReference</key>
-			<string>A9B34C5F1E181855004FDFD6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>A9B34C5F1E181855004FDFD6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Bible ReadingTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A9B34C601E181855004FDFD6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>A9B34C431E181855004FDFD6</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>A9B34C4A1E181855004FDFD6</string>
-			<key>remoteInfo</key>
-			<string>Bible Reading</string>
-		</dict>
-		<key>A9B34C611E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>A9B34C4A1E181855004FDFD6</string>
-			<key>targetProxy</key>
-			<string>A9B34C601E181855004FDFD6</string>
-		</dict>
-		<key>A9B34C621E181855004FDFD6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A9B34C631E181855004FDFD6</string>
-				<string>A9B34C651E181855004FDFD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Bible ReadingTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C631E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Bible_ReadingTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C641E181855004FDFD6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A9B34C631E181855004FDFD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9B34C651E181855004FDFD6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B34C661E181855004FDFD6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A9B34C671E181855004FDFD6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A9B34C681E181855004FDFD6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A9B34C691E181855004FDFD6</string>
-				<string>A9B34C6A1E181855004FDFD6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A9B34C691E181855004FDFD6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>07EA3E7744AADF36F7B1378F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>WHWKX5DYT5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Bible Reading/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ru.antonivanov.Bible-Reading</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A9B34C6A1E181855004FDFD6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CD62FD89ECCF757A3BAC583F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>WHWKX5DYT5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Bible Reading/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ru.antonivanov.Bible-Reading</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A9B34C6B1E181855004FDFD6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A9B34C6C1E181855004FDFD6</string>
-				<string>A9B34C6D1E181855004FDFD6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A9B34C6C1E181855004FDFD6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5811ED0F41D8A2FB61289511</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>WHWKX5DYT5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Bible ReadingTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ru.antonivanov.Bible-ReadingTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Bible Reading.app/Bible Reading</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A9B34C6D1E181855004FDFD6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B52D1D3E6329AF375965FAB7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>WHWKX5DYT5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Bible ReadingTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ru.antonivanov.Bible-ReadingTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Bible Reading.app/Bible Reading</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B52D1D3E6329AF375965FAB7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Bible ReadingTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3390E2F72BC80A28FA2F396</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>07EA3E7744AADF36F7B1378F</string>
-				<string>CD62FD89ECCF757A3BAC583F</string>
-				<string>5811ED0F41D8A2FB61289511</string>
-				<string>B52D1D3E6329AF375965FAB7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C38970C67899F48DA6340851</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Bible_Reading.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C9830D7257D6AC8A0F816758</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C38970C67899F48DA6340851</string>
-				<string>E6323E1F85C0C5762C972255</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CD62FD89ECCF757A3BAC583F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Bible Reading.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2622CB7320C043909725D1F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D9F9E3018E14772B0DF2C07C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E24F9EC1616FBC5EBB29DB55</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E6323E1F85C0C5762C972255</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Bible_ReadingTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E63DE010E221D715E28D3948</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C38970C67899F48DA6340851</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>A9B34C431E181855004FDFD6</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480EC891FAAA37415B67DBD7 /* Pods_Bible_ReadingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6323E1F85C0C5762C972255 /* Pods_Bible_ReadingTests.framework */; };
+		A9B34C4F1E181855004FDFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B34C4E1E181855004FDFD6 /* AppDelegate.swift */; };
+		A9B34C511E181855004FDFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B34C501E181855004FDFD6 /* ViewController.swift */; };
+		A9B34C541E181855004FDFD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B34C521E181855004FDFD6 /* Main.storyboard */; };
+		A9B34C561E181855004FDFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B34C551E181855004FDFD6 /* Assets.xcassets */; };
+		A9B34C591E181855004FDFD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B34C571E181855004FDFD6 /* LaunchScreen.storyboard */; };
+		A9B34C641E181855004FDFD6 /* Bible_ReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B34C631E181855004FDFD6 /* Bible_ReadingTests.swift */; };
+		A9B34C701E184151004FDFD6 /* bible.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B34C6F1E184150004FDFD6 /* bible.pb.swift */; };
+		A9B34C731E184193004FDFD6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A9B34C721E184193004FDFD6 /* Podfile */; };
+		E63DE010E221D715E28D3948 /* Pods_Bible_Reading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38970C67899F48DA6340851 /* Pods_Bible_Reading.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9B34C601E181855004FDFD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B34C431E181855004FDFD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9B34C4A1E181855004FDFD6;
+			remoteInfo = "Bible Reading";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07EA3E7744AADF36F7B1378F /* Pods-Bible Reading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bible Reading.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading.debug.xcconfig"; sourceTree = "<group>"; };
+		5811ED0F41D8A2FB61289511 /* Pods-Bible ReadingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bible ReadingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9B34C4B1E181855004FDFD6 /* Bible Reading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Reading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B34C4E1E181855004FDFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9B34C501E181855004FDFD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9B34C531E181855004FDFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9B34C551E181855004FDFD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9B34C581E181855004FDFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9B34C5A1E181855004FDFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B34C5F1E181855004FDFD6 /* Bible ReadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible ReadingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B34C631E181855004FDFD6 /* Bible_ReadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_ReadingTests.swift; sourceTree = "<group>"; };
+		A9B34C651E181855004FDFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B34C6F1E184150004FDFD6 /* bible.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = bible.pb.swift; path = generated/bible.pb.swift; sourceTree = "<group>"; };
+		A9B34C721E184193004FDFD6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		B52D1D3E6329AF375965FAB7 /* Pods-Bible ReadingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bible ReadingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests.release.xcconfig"; sourceTree = "<group>"; };
+		C38970C67899F48DA6340851 /* Pods_Bible_Reading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bible_Reading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD62FD89ECCF757A3BAC583F /* Pods-Bible Reading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bible Reading.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading.release.xcconfig"; sourceTree = "<group>"; };
+		E6323E1F85C0C5762C972255 /* Pods_Bible_ReadingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bible_ReadingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9B34C481E181855004FDFD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63DE010E221D715E28D3948 /* Pods_Bible_Reading.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B34C5C1E181855004FDFD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480EC891FAAA37415B67DBD7 /* Pods_Bible_ReadingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9B34C421E181855004FDFD6 = {
+			isa = PBXGroup;
+			children = (
+				A9B34C4D1E181855004FDFD6 /* Bible Reading */,
+				A9B34C621E181855004FDFD6 /* Bible ReadingTests */,
+				A9B34C4C1E181855004FDFD6 /* Products */,
+				C3390E2F72BC80A28FA2F396 /* Pods */,
+				C9830D7257D6AC8A0F816758 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9B34C4C1E181855004FDFD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9B34C4B1E181855004FDFD6 /* Bible Reading.app */,
+				A9B34C5F1E181855004FDFD6 /* Bible ReadingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B34C4D1E181855004FDFD6 /* Bible Reading */ = {
+			isa = PBXGroup;
+			children = (
+				A9B34C711E18417B004FDFD6 /* Supporting Files */,
+				A9B34C6E1E184143004FDFD6 /* generated */,
+				A9B34C4E1E181855004FDFD6 /* AppDelegate.swift */,
+				A9B34C501E181855004FDFD6 /* ViewController.swift */,
+				A9B34C521E181855004FDFD6 /* Main.storyboard */,
+				A9B34C571E181855004FDFD6 /* LaunchScreen.storyboard */,
+			);
+			path = "Bible Reading";
+			sourceTree = "<group>";
+		};
+		A9B34C621E181855004FDFD6 /* Bible ReadingTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9B34C631E181855004FDFD6 /* Bible_ReadingTests.swift */,
+				A9B34C651E181855004FDFD6 /* Info.plist */,
+			);
+			path = "Bible ReadingTests";
+			sourceTree = "<group>";
+		};
+		A9B34C6E1E184143004FDFD6 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				A9B34C6F1E184150004FDFD6 /* bible.pb.swift */,
+			);
+			name = generated;
+			sourceTree = "<group>";
+		};
+		A9B34C711E18417B004FDFD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9B34C751E1A7313004FDFD6 /* bibles */,
+				A9B34C721E184193004FDFD6 /* Podfile */,
+				A9B34C551E181855004FDFD6 /* Assets.xcassets */,
+				A9B34C5A1E181855004FDFD6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9B34C751E1A7313004FDFD6 /* bibles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bibles;
+			sourceTree = "<group>";
+		};
+		C3390E2F72BC80A28FA2F396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07EA3E7744AADF36F7B1378F /* Pods-Bible Reading.debug.xcconfig */,
+				CD62FD89ECCF757A3BAC583F /* Pods-Bible Reading.release.xcconfig */,
+				5811ED0F41D8A2FB61289511 /* Pods-Bible ReadingTests.debug.xcconfig */,
+				B52D1D3E6329AF375965FAB7 /* Pods-Bible ReadingTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9830D7257D6AC8A0F816758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C38970C67899F48DA6340851 /* Pods_Bible_Reading.framework */,
+				E6323E1F85C0C5762C972255 /* Pods_Bible_ReadingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9B34C4A1E181855004FDFD6 /* Bible Reading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B34C681E181855004FDFD6 /* Build configuration list for PBXNativeTarget "Bible Reading" */;
+			buildPhases = (
+				D2622CB7320C043909725D1F /* [CP] Check Pods Manifest.lock */,
+				A9B34C471E181855004FDFD6 /* Sources */,
+				A9B34C481E181855004FDFD6 /* Frameworks */,
+				A9B34C491E181855004FDFD6 /* Resources */,
+				2A92DABC3043F9B819AD2F9B /* [CP] Embed Pods Frameworks */,
+				A5BDF402CBB7E18012C684EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bible Reading";
+			productName = "Bible Reading";
+			productReference = A9B34C4B1E181855004FDFD6 /* Bible Reading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9B34C5E1E181855004FDFD6 /* Bible ReadingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B34C6B1E181855004FDFD6 /* Build configuration list for PBXNativeTarget "Bible ReadingTests" */;
+			buildPhases = (
+				E24F9EC1616FBC5EBB29DB55 /* [CP] Check Pods Manifest.lock */,
+				A9B34C5B1E181855004FDFD6 /* Sources */,
+				A9B34C5C1E181855004FDFD6 /* Frameworks */,
+				A9B34C5D1E181855004FDFD6 /* Resources */,
+				1B4BA449E9C625F90BEC813A /* [CP] Embed Pods Frameworks */,
+				D9F9E3018E14772B0DF2C07C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B34C611E181855004FDFD6 /* PBXTargetDependency */,
+			);
+			name = "Bible ReadingTests";
+			productName = "Bible ReadingTests";
+			productReference = A9B34C5F1E181855004FDFD6 /* Bible ReadingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9B34C431E181855004FDFD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Anton Ivanov";
+				TargetAttributes = {
+					A9B34C4A1E181855004FDFD6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WHWKX5DYT5;
+						ProvisioningStyle = Automatic;
+					};
+					A9B34C5E1E181855004FDFD6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WHWKX5DYT5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9B34C4A1E181855004FDFD6;
+					};
+				};
+			};
+			buildConfigurationList = A9B34C461E181855004FDFD6 /* Build configuration list for PBXProject "Bible Reading" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9B34C421E181855004FDFD6;
+			productRefGroup = A9B34C4C1E181855004FDFD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B34C4A1E181855004FDFD6 /* Bible Reading */,
+				A9B34C5E1E181855004FDFD6 /* Bible ReadingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9B34C491E181855004FDFD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B34C591E181855004FDFD6 /* LaunchScreen.storyboard in Resources */,
+				A9B34C561E181855004FDFD6 /* Assets.xcassets in Resources */,
+				A9B34C731E184193004FDFD6 /* Podfile in Resources */,
+				A9B34C541E181855004FDFD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B34C5D1E181855004FDFD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B4BA449E9C625F90BEC813A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A92DABC3043F9B819AD2F9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5BDF402CBB7E18012C684EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2622CB7320C043909725D1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9F9E3018E14772B0DF2C07C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E24F9EC1616FBC5EBB29DB55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B34C471E181855004FDFD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B34C511E181855004FDFD6 /* ViewController.swift in Sources */,
+				A9B34C701E184151004FDFD6 /* bible.pb.swift in Sources */,
+				A9B34C4F1E181855004FDFD6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B34C5B1E181855004FDFD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B34C641E181855004FDFD6 /* Bible_ReadingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9B34C611E181855004FDFD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9B34C4A1E181855004FDFD6 /* Bible Reading */;
+			targetProxy = A9B34C601E181855004FDFD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9B34C521E181855004FDFD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B34C531E181855004FDFD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9B34C571E181855004FDFD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B34C581E181855004FDFD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9B34C661E181855004FDFD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9B34C671E181855004FDFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9B34C691E181855004FDFD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EA3E7744AADF36F7B1378F /* Pods-Bible Reading.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WHWKX5DYT5;
+				INFOPLIST_FILE = "Bible Reading/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.antonivanov.Bible-Reading";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A9B34C6A1E181855004FDFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD62FD89ECCF757A3BAC583F /* Pods-Bible Reading.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WHWKX5DYT5;
+				INFOPLIST_FILE = "Bible Reading/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.antonivanov.Bible-Reading";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A9B34C6C1E181855004FDFD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5811ED0F41D8A2FB61289511 /* Pods-Bible ReadingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WHWKX5DYT5;
+				INFOPLIST_FILE = "Bible ReadingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.antonivanov.Bible-ReadingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Reading.app/Bible Reading";
+			};
+			name = Debug;
+		};
+		A9B34C6D1E181855004FDFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52D1D3E6329AF375965FAB7 /* Pods-Bible ReadingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WHWKX5DYT5;
+				INFOPLIST_FILE = "Bible ReadingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.antonivanov.Bible-ReadingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Reading.app/Bible Reading";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B34C461E181855004FDFD6 /* Build configuration list for PBXProject "Bible Reading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B34C661E181855004FDFD6 /* Debug */,
+				A9B34C671E181855004FDFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B34C681E181855004FDFD6 /* Build configuration list for PBXNativeTarget "Bible Reading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B34C691E181855004FDFD6 /* Debug */,
+				A9B34C6A1E181855004FDFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B34C6B1E181855004FDFD6 /* Build configuration list for PBXNativeTarget "Bible ReadingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B34C6C1E181855004FDFD6 /* Debug */,
+				A9B34C6D1E181855004FDFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9B34C431E181855004FDFD6 /* Project object */;
+}
