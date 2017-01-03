@@ -8,44 +8,83 @@
 
 import Foundation
 
-class ChapterRef {
-    init(ref: String) {
+struct Range: Equatable {
+    let from: Int
+    let to: Int
+    
+    public func isInside(value: Int) -> Bool {
+        return value >= from && value <= to
+    }
+}
+
+extension Range {
+    static func == (left: Range, right: Range) -> Bool {
+        return left.from == right.from && left.to == right.to
+    }
+}
+
+class ChapterRef: Equatable {
+    init(index: Int, ref: String) {
+        self.index = index
         // TODO
         self.refs = []
     }
-    init(refs: [(Int, Int)]) {
+    init(index: Int, refs: [Range]) {
+        self.index = index
         self.refs = refs
     }
     
-    let refs: [(Int, Int)]
+    public let index: Int
+    public let refs: [Range]
 }
 
-class BookRef {
+extension ChapterRef {
+    static func == (left: ChapterRef, right: ChapterRef) -> Bool {
+        return left.index == right.index && left.refs == right.refs
+    }
+}
+
+class BookRef: Equatable {
     init(ref: String) {
         // TODO
         self.refs = []
     }
-    init(refs: [(Int, ChapterRef)]) {
+    init(refs: [ChapterRef]) {
         self.refs = refs
     }
 
-    let refs: [(Int, ChapterRef)]
+    public let refs: [ChapterRef]
 }
 
-class BibleRef {
+extension BookRef {
+    static func == (left: BookRef, right: BookRef) -> Bool {
+        return left.refs == right.refs
+    }
+}
+
+class BibleRef: Equatable {
     init(ref: String) {
+        self.original_ref = ref
         // TODO
         self.book_index = 0
         self.book_ref = BookRef(refs: [])
     }
     
     init(book_index: Int, book_ref: BookRef) {
+        self.original_ref = ""
         self.book_index = book_index
         self.book_ref = book_ref
     }
     
-    let book_index: Int
-    let book_ref: BookRef
+    public let original_ref: String
+    public let book_index: Int
+    public let book_ref: BookRef
+}
+
+extension BibleRef {
+    static func == (left: BibleRef, right: BibleRef) -> Bool {
+        return left.book_index == right.book_index && left.book_ref == right.book_ref
+    }
 }
 
 class DayRef {
@@ -59,6 +98,6 @@ class DayRef {
         self.refs = refs
     }
     
-    let refs: [BibleRef]
+    public let refs: [BibleRef]
 }
 

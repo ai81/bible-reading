@@ -45,8 +45,9 @@ class BibleProtoConverter {
                 verses.sort(by: { (v1, v2) -> Bool in
                     v1.index < v2.index
                 })
-                let chapter = Chapter(verses: verses)
-                chapters[Int(chapter_msg.number)] = chapter
+                let chapter_index = Int(chapter_msg.number)
+                let chapter = Chapter(index:chapter_index, verses: verses)
+                chapters[chapter_index] = chapter
             }
             let book = Book(name: book_msg.title, chapters: chapters)
             books[Int(book_msg.index)] = book

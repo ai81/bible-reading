@@ -15,36 +15,35 @@ enum BibleSearchErrors: Error {
 }
 
 struct Vers {
-    let index: Int
-    let text: String
+    public let index: Int
+    public let text: String
 }
 
 class Chapter {
-    init(verses: [Vers]) {
+    init(index: Int, verses: [Vers]) {
+        self.index = index
         self.verses = verses
     }
     
-    func find(ref: ChapterRef) throws -> String {
-        var result = ""
-        for (from, to) in ref.refs {
-            guard from <= verses.last!.index && from >= verses.first!.index else {
-                throw BibleSearchErrors.noValidVersWithIndex(index: from)
+    func find(ref: ChapterRef) throws -> [Vers] {
+        var result = [Vers]()
+        for range in ref.refs {
+            guard range.from <= verses.last!.index && range.from >= verses.first!.index else {
+                throw BibleSearchErrors.noValidVersWithIndex(index: range.from)
             }
-            guard to <= verses.last!.index && to >= verses.first!.index else {
-                throw BibleSearchErrors.noValidVersWithIndex(index: to)
+            guard range.to <= verses.last!.index && range.to >= verses.first!.index else {
+                throw BibleSearchErrors.noValidVersWithIndex(index: range.to)
             }
             for vers in self.verses {
-                if (vers.index >= from || vers.index <= to) {
-                    if (!result.isEmpty) {
-                      result.append(" ")
-                    }
-                    result.append(vers.text)
+                if (range.isInside(value: vers.index)) {
+                    result.append(vers)
                 }
             }
         }
         return result
     }
     
+    public let index: Int
     private var verses = [Vers]()
 }
 
@@ -54,22 +53,21 @@ class Book {
         self.chapters = chapters
     }
     
-    func find(ref: BookRef) throws -> String {
-        var result = ""
-        for (chapter_index, chapter_ref) in ref.refs {
-            if let chapter = chapters[chapter_index] {
+    func find(ref: BookRef) throws -> [(Chapter, [Vers])] {
+        var result = [(Chapter, [Vers])]()
+        for chapter_ref in ref.refs {
+            if let chapter = chapters[chapter_ref.index] {
                 let part = try chapter.find(ref: chapter_ref)
-                result.append(" ")
-                result.append(part)
+                result.append((chapter, part))
             } else {
-                throw BibleSearchErrors.noValidChapterWithIndex(index: chapter_index)
+                throw BibleSearchErrors.noValidChapterWithIndex(index: chapter_ref.index)
             }
         }
         
         return result
     }
     
-    private let name: String
+    public let name: String
     private var chapters = [Int:Chapter]()
 }
 
@@ -78,9 +76,9 @@ class Bible {
         self.books = books
     }
     
-    func find(ref: BibleRef) throws -> String {
+    func find(ref: BibleRef) throws -> BibleSearchResult {
         if let book = books[ref.book_index] {
-            return try book.find(ref: ref.book_ref)
+            return try BibleSearchResult(ref: ref, book: book, vers: book.find(ref: ref.book_ref))
         } else {
             throw BibleSearchErrors.noValidBookWithIndex(index: ref.book_index)
         }
