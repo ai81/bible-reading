@@ -1,4 +1,6 @@
-package Bible;
+syntax = "proto2";
+
+package BibleProto;
 
 option optimize_for = SPEED;
 

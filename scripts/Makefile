@@ -6,3 +6,4 @@ gen/bible_pb2.py: bible.proto
 
 clean:
 	rm -rf ./gen/bible_pb2.py
+	rm -rf ../Bible\ Reading/generated/*
