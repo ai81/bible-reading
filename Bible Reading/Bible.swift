@@ -9,7 +9,7 @@
 import Foundation
 
 enum BibleSearchErrors: Error {
-    case noValidBookWithIndex(index: Int)
+    case noValidBookWithName(name: String)
     case noValidChapterWithIndex(index: Int)
     case noValidVersWithIndex(index: Int)
 }
@@ -31,8 +31,10 @@ class Chapter {
             guard range.from <= verses.last!.index && range.from >= verses.first!.index else {
                 throw BibleSearchErrors.noValidVersWithIndex(index: range.from)
             }
-            guard range.to <= verses.last!.index && range.to >= verses.first!.index else {
-                throw BibleSearchErrors.noValidVersWithIndex(index: range.to)
+            if let to = range.to {
+                guard to <= verses.last!.index && to >= verses.first!.index else {
+                    throw BibleSearchErrors.noValidVersWithIndex(index: to)
+                }
             }
             for vers in self.verses {
                 if (range.isInside(value: vers.index)) {
@@ -72,18 +74,18 @@ class Book {
 }
 
 class Bible {
-    init(books: [Int: Book]) {
+    init(books: [String: Book]) {
         self.books = books
     }
     
     func find(ref: BibleRef) throws -> BibleSearchResult {
-        if let book = books[ref.book_index] {
+        if let book = books[ref.book_name] {
             return try BibleSearchResult(ref: ref, book: book, vers: book.find(ref: ref.book_ref))
         } else {
-            throw BibleSearchErrors.noValidBookWithIndex(index: ref.book_index)
+            throw BibleSearchErrors.noValidBookWithName(name: ref.book_name)
         }
     }
     
     
-    private var books = [Int: Book]()
+    private var books = [String: Book]()
 }

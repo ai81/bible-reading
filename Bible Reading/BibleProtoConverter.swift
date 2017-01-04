@@ -25,7 +25,7 @@ class BibleProtoConverter {
         guard msg.version == BIBLE_PROTO_VERSION else {
            throw BibleReadingErrors.invalidBibleProtoVersion
         }
-        var books = [Int: Book]()
+        var books = [String: Book]()
         for book_msg in msg.books {
             guard book_msg.version == BOOK_PROTO_VERSION else {
                 throw BibleReadingErrors.invalidBookProtoVersion
@@ -50,7 +50,7 @@ class BibleProtoConverter {
                 chapters[chapter_index] = chapter
             }
             let book = Book(name: book_msg.title, chapters: chapters)
-            books[Int(book_msg.index)] = book
+            books[book_msg.title] = book
         }
         return Bible(books: books)
     }
