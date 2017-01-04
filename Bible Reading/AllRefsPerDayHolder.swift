@@ -9,10 +9,6 @@
 import Foundation
 
 class AllRefsPerDayHolder {
-    static public func findForCurrentDate() -> String? {
-        return findForDay(date: Date())
-    }
-    
     static public func findForDay(date: Date) -> String? {
         let cal = Calendar.current
         let year = cal.component(Calendar.Component.year, from: date)

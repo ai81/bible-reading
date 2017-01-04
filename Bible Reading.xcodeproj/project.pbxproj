@@ -14,6 +14,7 @@
 		A91A1D781E1BFF8300225E4F /* BibleSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A1D771E1BFF8300225E4F /* BibleSearchResult.swift */; };
 		A91A1D7A1E1C11BE00225E4F /* AbbrevToBookName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A1D791E1C11BE00225E4F /* AbbrevToBookName.swift */; };
 		A9A564011E1D4C4800601C64 /* AllRefsPerDayHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A564001E1D4C4800601C64 /* AllRefsPerDayHolder.swift */; };
+		A9A564031E1D77A000601C64 /* AttributedTextPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A564021E1D77A000601C64 /* AttributedTextPresentation.swift */; };
 		A9B34C4F1E181855004FDFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B34C4E1E181855004FDFD6 /* AppDelegate.swift */; };
 		A9B34C511E181855004FDFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B34C501E181855004FDFD6 /* ViewController.swift */; };
 		A9B34C541E181855004FDFD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B34C521E181855004FDFD6 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		A91A1D771E1BFF8300225E4F /* BibleSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibleSearchResult.swift; sourceTree = "<group>"; };
 		A91A1D791E1C11BE00225E4F /* AbbrevToBookName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbbrevToBookName.swift; sourceTree = "<group>"; };
 		A9A564001E1D4C4800601C64 /* AllRefsPerDayHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRefsPerDayHolder.swift; sourceTree = "<group>"; };
+		A9A564021E1D77A000601C64 /* AttributedTextPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedTextPresentation.swift; sourceTree = "<group>"; };
 		A9B34C4B1E181855004FDFD6 /* Bible Reading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Reading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B34C4E1E181855004FDFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B34C501E181855004FDFD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				A91A1D771E1BFF8300225E4F /* BibleSearchResult.swift */,
 				A91A1D791E1C11BE00225E4F /* AbbrevToBookName.swift */,
 				A9A564001E1D4C4800601C64 /* AllRefsPerDayHolder.swift */,
+				A9A564021E1D77A000601C64 /* AttributedTextPresentation.swift */,
 			);
 			path = "Bible Reading";
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			files = (
 				A9B34C7B1E1AA4C6004FDFD6 /* BibleRef.swift in Sources */,
 				A9B34C791E1A9D9E004FDFD6 /* Bible.swift in Sources */,
+				A9A564031E1D77A000601C64 /* AttributedTextPresentation.swift in Sources */,
 				A9B34C7D1E1AA55D004FDFD6 /* BibleProtoConverter.swift in Sources */,
 				A9B34C511E181855004FDFD6 /* ViewController.swift in Sources */,
 				A91A1D641E1ACD9C00225E4F /* BibleReader.swift in Sources */,
