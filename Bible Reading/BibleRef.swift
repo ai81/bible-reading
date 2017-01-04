@@ -81,7 +81,6 @@ extension BookRef {
         
         mutating func reset() {
             lastRef = 0
-            lastChapter = 0
             rangeStartRef = 0
             rangeStartChapter = 0
         }
@@ -89,7 +88,6 @@ extension BookRef {
         mutating func startRange() {
             rangeStartChapter = lastChapter
             rangeStartRef = lastRef
-            lastChapter = 0
             lastRef = 0
         }
         

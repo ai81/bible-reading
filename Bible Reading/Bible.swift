@@ -78,6 +78,12 @@ class Bible {
         self.books = books
     }
     
+    func find(ref: DayRef) throws -> [BibleSearchResult] {
+        return try ref.refs.map { (r) -> BibleSearchResult in
+            try find(ref: r)
+        }
+    }
+    
     func find(ref: BibleRef) throws -> BibleSearchResult {
         if let book = books[ref.book_name] {
             return try BibleSearchResult(ref: ref, book: book, vers: book.find(ref: ref.book_ref))

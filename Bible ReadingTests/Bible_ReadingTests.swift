@@ -27,16 +27,23 @@ class Bible_ReadingTests: XCTestCase {
     }
     
     func testCorrectRefsParsing() throws {
-        let r1 = try BibleRef(ref: "Быт 10, 1-10")
+        let r1 = try BibleRef(ref: "Быт 10, 1-10.12")
         XCTAssertEqual(r1.book_name, "Первая книга Моисеева. Бытие")
-        XCTAssertEqual(r1.book_ref.refs.count, 1)
+        XCTAssertEqual(r1.book_ref.refs.count, 2)
         XCTAssertEqual(r1.book_ref.refs[0].index, 10)
         XCTAssertEqual(r1.book_ref.refs[0].refs.count, 1)
         XCTAssertEqual(r1.book_ref.refs[0].refs[0].from, 1)
         XCTAssertEqual(r1.book_ref.refs[0].refs[0].to, 10)
-        
+        XCTAssertEqual(r1.book_ref.refs[1].refs.count, 1)
+        XCTAssertEqual(r1.book_ref.refs[1].refs[0].from, 12)
+        XCTAssertEqual(r1.book_ref.refs[1].refs[0].to, 12)
+    }
+    
+    func testCorrectRefsParsing2() throws {
         XCTAssertEqual(try BibleRef(ref: "Быт 10, 1 - 10 "), try BibleRef(ref: "Быт 10,1-10"))
-        
+    }
+    
+    func testCorrectRefsParsing3() throws {
         let r2 = try BibleRef(ref: "Соф 2,3.3,12-4,13")
         XCTAssertEqual(r2.book_ref.refs.count, 3)
         XCTAssertEqual(r2.book_ref.refs[0].index, 2)
@@ -51,7 +58,31 @@ class Bible_ReadingTests: XCTestCase {
         XCTAssertEqual(r2.book_ref.refs[2].refs.count, 1)
         XCTAssertEqual(r2.book_ref.refs[2].refs[0].from, 1)
         XCTAssertEqual(r2.book_ref.refs[2].refs[0].to, 13)
-
+    }
+    
+    func testCorrectRefsParsing4() throws {
         XCTAssertEqual(try BibleRef(ref: "Соф 2,3.3,12-4,13"), try BibleRef(ref: "Соф 2,3;3,12-4,13"))
+    }
+    
+    func testCorrectRefsParsing5() throws {
+        let r3 = try DayRef(ref: "Быт 10, 1-10;Соф 2,3.3,12-4,13")
+        XCTAssertEqual(r3.refs.count, 2)
+    }
+    
+    func testAllRefsPer2017() throws {
+        let path = Bundle.main.path(forResource: "bibles/ru.proto", ofType: "gz")
+        let bible = BibleReader.read(filename: path!)
+        for ref in AllRefsPerDayHolder.refs2107 {
+            do {
+                if !ref.isEmpty {
+                    let r = try DayRef(ref: ref)
+                    let result = try bible!.find(ref: r)
+                    XCTAssert(result.count > 0)
+                }
+            } catch let ex {
+               NSLog("error in work with ref \(ref): \(ex)")
+                XCTAssertEqual(ref, "", "wrong ref")
+            }
+        }
     }
 }
