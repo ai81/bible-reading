@@ -6,7 +6,9 @@ target 'Bible Reading' do
   # Pods for Bible Reading
   pod 'ProtocolBuffers-Swift'
   pod 'GZIP'
-
+  pod 'FontAwesome.swift'
+  pod 'RMDateSelectionViewController'
+  
   target 'Bible ReadingTests' do
     inherit! :search_paths
     # Pods for testing

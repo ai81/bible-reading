@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import RMDateSelectionViewController
+import FontAwesome_swift
 
 class ViewController: UIViewController {
+    @IBOutlet weak var changeDate: UIBarButtonItem!
     @IBOutlet weak var textView: UITextView!
     private var bible: Bible?
     private var date = Date()
@@ -26,14 +29,35 @@ class ViewController: UIViewController {
         
         let path = Bundle.main.path(forResource: "bibles/ru.proto", ofType: "gz")
         self.bible = BibleReader.read(filename: path!)
+        
+        self.changeDate.image = UIImage.fontAwesomeIcon(name: .calendarO, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        realod()
+        reload()
     }
     
-    private func realod() {
+    @IBAction func changeDateAction(_ sender: Any) {
+        let selectAction = RMAction<UIDatePicker>(title: "Выбрать", style: RMActionStyle.done) { controller in
+            self.date = controller.contentView.date
+            self.reload()
+        }
+        let cancelAction = RMAction<UIDatePicker>(title: "Отмена", style: RMActionStyle.cancel) { _ in
+        }
+        let actionController = RMDateSelectionViewController(style: RMActionControllerStyle.white, title: "Новая дата", message: nil, select: selectAction, andCancel: cancelAction)!;
+        
+        let datePicker = actionController.datePicker!
+        datePicker.datePickerMode = UIDatePickerMode.date
+        let dateStringFormatter = DateFormatter()
+        dateStringFormatter.dateFormat = "yyyy-MM-dd"
+        datePicker.minimumDate = dateStringFormatter.date(from: "2017-01-01")
+        datePicker.maximumDate = dateStringFormatter.date(from: "2017-12-31")
+        
+        present(actionController, animated: true, completion: nil)
+    }
+    
+    private func reload() {
         self.title = dateToString(date: self.date)
         
         do {

@@ -37,8 +37,15 @@
                             <constraint firstItem="QD5-2d-ZKY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-64" id="csV-Si-6EW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YVb-ud-R8y"/>
+                    <navigationItem key="navigationItem" id="YVb-ud-R8y">
+                        <barButtonItem key="rightBarButtonItem" id="j59-dU-Dnt">
+                            <connections>
+                                <action selector="changeDateAction:" destination="BYZ-38-t0r" id="osj-33-XXl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="changeDate" destination="j59-dU-Dnt" id="YqS-Pa-jzk"/>
                         <outlet property="textView" destination="QD5-2d-ZKY" id="enU-Qc-SI1"/>
                     </connections>
                 </viewController>
@@ -51,7 +58,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y7h-wW-0BO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ByQ-yk-9eq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ByQ-yk-9eq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

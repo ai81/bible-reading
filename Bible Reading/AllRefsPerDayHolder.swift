@@ -17,7 +17,7 @@ class AllRefsPerDayHolder {
         }
         let day = cal.ordinality(of: .day, in: .year, for: date)
         return day.flatMap { (day) -> String? in
-            refs2107[day - 1]
+            day >= refs2107.count ? nil : refs2107[day - 1]
         }
     }
     
