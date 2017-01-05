@@ -15,11 +15,22 @@ enum BibleRefErrors: Error {
     case NoChapter
     case NoRef
     case WrongCharacter(str: String)
+    case FromIsGreateThenTo
 }
 
 struct Range: Equatable {
     let from: Int
     let to: Int?
+    
+    init(from: Int, to: Int?) throws {
+        self.from = from
+        self.to = to
+        if let t = to {
+            guard self.from <= t else {
+                throw BibleRefErrors.FromIsGreateThenTo
+            }
+        }
+    }
     
     public func isInside(value: Int) -> Bool {
         return value >= from && value <= to ?? Int.max
@@ -33,11 +44,6 @@ extension Range {
 }
 
 class ChapterRef: Equatable {
-    init(index: Int, ref: String) throws {
-        self.index = index
-        // TODO
-        self.refs = []
-    }
     init(index: Int, refs: [Range]) {
         self.index = index
         self.refs = refs
@@ -98,13 +104,13 @@ extension BookRef {
                 }
                 if lastChapter != 0 {
                     if lastChapter != rangeStartChapter { // rang withg 2 chapters
-                        chapters.append(ChapterRef(index: rangeStartChapter, refs: [Range(from:rangeStartRef, to:nil)]))
-                        chapters.append(ChapterRef(index: lastChapter, refs: [Range(from: 1, to:lastRef)]))
+                        chapters.append(ChapterRef(index: rangeStartChapter, refs: [try Range(from:rangeStartRef, to:nil)]))
+                        chapters.append(ChapterRef(index: lastChapter, refs: [try Range(from: 1, to:lastRef)]))
                     } else { // same chapters in range
-                        chapters.append(ChapterRef(index: rangeStartChapter, refs: [Range(from:rangeStartRef, to:lastRef)]))
+                        chapters.append(ChapterRef(index: rangeStartChapter, refs: [try Range(from:rangeStartRef, to:lastRef)]))
                     }
                 } else { // range without chatper in right side
-                    chapters.append(ChapterRef(index: rangeStartChapter, refs: [Range(from:rangeStartRef, to:lastRef)]))
+                    chapters.append(ChapterRef(index: rangeStartChapter, refs: [try Range(from:rangeStartRef, to:lastRef)]))
                 }
             } else { // just one ref
                 if lastChapter == 0 {
@@ -113,7 +119,7 @@ extension BookRef {
                 if lastRef == 0 {
                     throw BibleRefErrors.NoRef
                 }
-                chapters.append(ChapterRef(index: lastChapter, refs: [Range(from:lastRef, to:lastRef)]))
+                chapters.append(ChapterRef(index: lastChapter, refs: [try Range(from:lastRef, to:lastRef)]))
             }
             reset()
         }
