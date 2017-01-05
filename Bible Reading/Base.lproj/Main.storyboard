@@ -38,6 +38,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YVb-ud-R8y">
+                        <barButtonItem key="leftBarButtonItem" id="G96-jz-Tn8">
+                            <connections>
+                                <action selector="showSettings:" destination="BYZ-38-t0r" id="13N-Zf-mJM"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="j59-dU-Dnt">
                             <connections>
                                 <action selector="changeDateAction:" destination="BYZ-38-t0r" id="osj-33-XXl"/>
@@ -46,12 +51,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="changeDate" destination="j59-dU-Dnt" id="YqS-Pa-jzk"/>
+                        <outlet property="showSettingsButton" destination="G96-jz-Tn8" id="1rc-w9-BIL"/>
                         <outlet property="textView" destination="QD5-2d-ZKY" id="enU-Qc-SI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="107.49625187406298"/>
+            <point key="canvasLocation" x="2015.2" y="107.49625187406298"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Os-5r-YC2">
@@ -69,7 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gw3-E7-hPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="82"/>
+            <point key="canvasLocation" x="1072.8" y="81.409295352323838"/>
         </scene>
     </scenes>
 </document>

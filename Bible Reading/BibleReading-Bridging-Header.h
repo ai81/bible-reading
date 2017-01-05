@@ -9,6 +9,7 @@
 #ifndef bridge_h
 #define bridge_h
 
-#import "GZIP.h"
+#import "IASKAppSettingsViewController.h"
+#import "IASKSettingsReader.h"
 
 #endif /* bridge_h */

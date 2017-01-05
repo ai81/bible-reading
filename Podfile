@@ -8,6 +8,7 @@ target 'Bible Reading' do
   pod 'GZIP'
   pod 'FontAwesome.swift'
   pod 'RMDateSelectionViewController'
+  pod 'InAppSettingsKit'
   
   target 'Bible ReadingTests' do
     inherit! :search_paths

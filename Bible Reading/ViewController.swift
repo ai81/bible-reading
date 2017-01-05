@@ -9,8 +9,12 @@
 import UIKit
 import RMDateSelectionViewController
 import FontAwesome_swift
+import InAppSettingsKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, IASKSettingsDelegate {
+    fileprivate var _appSettingsViewController : IASKAppSettingsViewController? = nil
+
+    @IBOutlet weak var showSettingsButton: UIBarButtonItem!
     @IBOutlet weak var changeDate: UIBarButtonItem!
     @IBOutlet weak var textView: UITextView!
     private var bible: Bible?
@@ -22,6 +26,17 @@ class ViewController: UIViewController {
         return dateFormatterPrint.string(from: date)
     }
 
+    func appSettingsViewController() -> IASKAppSettingsViewController {
+        if _appSettingsViewController == nil {
+            _appSettingsViewController = IASKAppSettingsViewController()
+            _appSettingsViewController!.delegate = self
+            _appSettingsViewController!.showCreditsFooter = false
+            _appSettingsViewController!.title = "Настройки"
+        }
+        
+        return _appSettingsViewController!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +46,7 @@ class ViewController: UIViewController {
         self.bible = BibleReader.read(filename: path!)
         
         self.changeDate.image = UIImage.fontAwesomeIcon(name: .calendarO, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
+        self.showSettingsButton.image = UIImage.fontAwesomeIcon(name: .sliders, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +73,13 @@ class ViewController: UIViewController {
         present(actionController, animated: true, completion: nil)
     }
     
+    
+    @IBAction func showSettings(_ sender: Any) {
+        self.appSettingsViewController().showDoneButton = false;
+        self.appSettingsViewController().navigationItem.rightBarButtonItem = nil;
+        self.navigationController?.pushViewController(self.appSettingsViewController(), animated: true)
+    }
+    
     private func reload() {
         self.title = dateToString(date: self.date)
         
@@ -67,13 +90,21 @@ class ViewController: UIViewController {
                 try bible!.find(ref: $0)
             }
             
-            // TODO
-            self.textView.attributedText = AttributedTextPresentation.present(resultOpt: result, fontSize: 16.0)
+            var fontSize = UserDefaults.standard.integer(forKey: "font_size")
+            fontSize = fontSize == 0 ? 16 : fontSize
+            self.textView.attributedText = AttributedTextPresentation.present(resultOpt: result, fontSize: CGFloat(fontSize))
             
         } catch let ex {
             NSLog("error during setup text for date \(self.date): \(ex)")
             self.textView.text = ""
         }
+    }
+    
+    // MARK: IASKAppSettingsViewControllerDelegate protocol
+    func settingsViewControllerDidEnd(_ sender:IASKAppSettingsViewController)
+    {
+        reload()
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
