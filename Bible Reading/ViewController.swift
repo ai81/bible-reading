@@ -19,6 +19,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     @IBOutlet weak var textView: UITextView!
     private var bible: Bible?
     private var date = Date()
+    private var oldOffset: CGPoint?
     
     private func dateToString(date: Date) -> String {
         let dateFormatterPrint = DateFormatter()
@@ -39,8 +40,6 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.textView.contentInset = UIEdgeInsets(top: -40, left: 0, bottom: 20, right: 0)
         
         let path = Bundle.main.path(forResource: "bibles/ru.proto", ofType: "gz")
         self.bible = BibleReader.read(filename: path!)
@@ -52,6 +51,11 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         reload()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.oldOffset = self.textView.contentOffset
     }
     
     @IBAction func changeDateAction(_ sender: Any) {
@@ -81,6 +85,10 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     }
     
     private func reload() {
+        if let o = self.oldOffset {
+            self.textView.contentOffset = o
+        }
+        
         self.title = dateToString(date: self.date)
         
         do {
@@ -103,7 +111,6 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     // MARK: IASKAppSettingsViewControllerDelegate protocol
     func settingsViewControllerDidEnd(_ sender:IASKAppSettingsViewController)
     {
-        reload()
         self.dismiss(animated: true, completion: nil)
     }
 }
