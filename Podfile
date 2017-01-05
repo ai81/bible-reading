@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '8.0'
 
 target 'Bible Reading' do
   use_frameworks!
