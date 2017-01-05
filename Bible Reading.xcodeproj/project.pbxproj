@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		480EC891FAAA37415B67DBD7 /* Pods_Bible_ReadingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6323E1F85C0C5762C972255 /* Pods_Bible_ReadingTests.framework */; };
+		A908AF131E1EEB6A00C4D955 /* HolidaysHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908AF121E1EEB6A00C4D955 /* HolidaysHolder.swift */; };
 		A91A1D621E1ACC3000225E4F /* bibles in Resources */ = {isa = PBXBuildFile; fileRef = A9B34C761E1A924D004FDFD6 /* bibles */; };
 		A91A1D641E1ACD9C00225E4F /* BibleReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A1D631E1ACD9C00225E4F /* BibleReader.swift */; };
 		A91A1D741E1B107D00225E4F /* BibleProto.Bible.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A1D731E1B107D00225E4F /* BibleProto.Bible.proto.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		07EA3E7744AADF36F7B1378F /* Pods-Bible Reading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bible Reading.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading.debug.xcconfig"; sourceTree = "<group>"; };
 		5811ED0F41D8A2FB61289511 /* Pods-Bible ReadingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bible ReadingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bible ReadingTests/Pods-Bible ReadingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A908AF121E1EEB6A00C4D955 /* HolidaysHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidaysHolder.swift; sourceTree = "<group>"; };
 		A91A1D631E1ACD9C00225E4F /* BibleReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibleReader.swift; sourceTree = "<group>"; };
 		A91A1D731E1B107D00225E4F /* BibleProto.Bible.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BibleProto.Bible.proto.swift; path = generated/BibleProto.Bible.proto.swift; sourceTree = "<group>"; };
 		A91A1D761E1B196100225E4F /* BibleReading-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BibleReading-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				A91A1D791E1C11BE00225E4F /* AbbrevToBookName.swift */,
 				A9A564001E1D4C4800601C64 /* AllRefsPerDayHolder.swift */,
 				A9A564021E1D77A000601C64 /* AttributedTextPresentation.swift */,
+				A908AF121E1EEB6A00C4D955 /* HolidaysHolder.swift */,
 			);
 			path = "Bible Reading";
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				A9B34C7D1E1AA55D004FDFD6 /* BibleProtoConverter.swift in Sources */,
 				A9B34C511E181855004FDFD6 /* ViewController.swift in Sources */,
 				A91A1D641E1ACD9C00225E4F /* BibleReader.swift in Sources */,
+				A908AF131E1EEB6A00C4D955 /* HolidaysHolder.swift in Sources */,
 				A91A1D781E1BFF8300225E4F /* BibleSearchResult.swift in Sources */,
 				A9A564011E1D4C4800601C64 /* AllRefsPerDayHolder.swift in Sources */,
 				A91A1D7A1E1C11BE00225E4F /* AbbrevToBookName.swift in Sources */,
