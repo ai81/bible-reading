@@ -28,12 +28,15 @@ class AttributedTextPresentation {
                 let allVers = ref.vers.flatMap{ $0.1 }
                 var isFirstPart = true
                 for part in allVers {
+                    let attributed = NSMutableAttributedString(string: part.text, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: fontSize)])
                     if isFirstPart {
+                        let firstChar = attributed.mutableString.substring(to: 1)
+                        attributed.mutableString.replaceCharacters(in: NSMakeRange(0, 1), with: firstChar.uppercased())
                         isFirstPart = false
                     } else {
                         str.append(NSAttributedString(string: " "))
                     }
-                    str.append(NSAttributedString(string: part.text, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: fontSize)]))
+                    str.append(attributed)
                 }
                 let lastChar = str.mutableString.substring(from: str.mutableString.length - 1)
                 if lastChar == "," || lastChar == "-" || lastChar == ")"  || lastChar == ":"  || lastChar == ";" {
