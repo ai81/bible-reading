@@ -73,7 +73,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
         let dateStringFormatter = DateFormatter()
         dateStringFormatter.dateFormat = "yyyy-MM-dd"
         datePicker.minimumDate = dateStringFormatter.date(from: "2017-01-01")
-        datePicker.maximumDate = dateStringFormatter.date(from: "2017-12-31")
+        datePicker.maximumDate = dateStringFormatter.date(from: "2018-12-31")
         
         present(actionController, animated: true, completion: nil)
     }

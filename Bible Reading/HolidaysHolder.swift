@@ -91,7 +91,7 @@ class HolidaysHolder {
         "11.30": Holiday(type: .Celebration, name: "св. Андрей Первозванный, Апостол"),
         "12.8": Holiday(type: .Celebration, name: "Непорочное Зачатие Пресвятой Девы Марии"),
         "12.25": Holiday(type: .Celebration, name: "Рождество Христово"),
-        "12.30": Holiday(type: .Holiday, name: "Святое Семейство - Иисус, Мария и Иосиф"),
+        "12.31": Holiday(type: .Holiday, name: "Святое Семейство - Иисус, Мария и Иосиф"),
         
         ].map { (HolidaysHolder.strToOrdinal(str: $0), $1)    })
     
