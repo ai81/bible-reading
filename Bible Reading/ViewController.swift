@@ -51,7 +51,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         reload()
-        reinstallNotifications()
+        NotificationsSupport.reinstallNotifications()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -108,39 +108,6 @@ class ViewController: UIViewController, IASKSettingsDelegate {
         } catch let ex {
             NSLog("error during setup text for date \(self.date): \(ex)")
             self.textView.text = ""
-        }
-    }
-    
-    private func reinstallNotifications() {
-        UIApplication.shared.cancelAllLocalNotifications()
-        
-        let nAboutReading = UserDefaults.standard.object(forKey: "day_reading_notification").map{$0 as! Bool}
-        let nHolday0 = UserDefaults.standard.object(forKey: "holiday_0_day").map{$0 as! Bool}
-        let nHolday1 = UserDefaults.standard.object(forKey: "holiday_1_day").map{$0 as! Bool}
-        let nHolday3 = UserDefaults.standard.object(forKey: "holiday_3_day").map{$0 as! Bool}
-
-        let today = Date()
-        var components = Calendar.current.dateComponents([.year, .month, .day], from: today)
-        components.hour = 10
-        components.minute = 0
-        components.second = 0
-        components.day = components.day! + 1
-        let startNotification = Calendar.current.date(from: components)!
-
-        if nAboutReading ?? true {
-            let daysForward = 7
-            var date = startNotification
-            for _ in 0...daysForward {
-                if let ref = AllRefsPerDayHolder.findForDay(date: date) {
-                    let notification = UILocalNotification()
-                    notification.alertBody = "Чтения дня: " + ref
-                    notification.fireDate = date
-                    notification.timeZone = TimeZone.current
-                    notification.soundName = UILocalNotificationDefaultSoundName
-                   UIApplication.shared.scheduleLocalNotification(notification)
-                }
-                date = Calendar.current.date(byAdding: .day, value: 1, to: date)!
-            }
         }
     }
     

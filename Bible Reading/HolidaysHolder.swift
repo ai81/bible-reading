@@ -18,6 +18,17 @@ enum HolidayType {
 struct Holiday {
     let type: HolidayType
     let name: String
+    
+    func description() -> String {
+        switch type {
+        case .Celebration:
+            return "торжество " + name
+        case .Holiday:
+            return "праздник " + name
+        default:
+            return name
+        }
+    }
 }
 
 extension Dictionary {
