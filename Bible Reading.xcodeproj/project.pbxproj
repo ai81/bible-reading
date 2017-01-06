@@ -202,6 +202,7 @@
 				A9B34C491E181855004FDFD6 /* Resources */,
 				2A92DABC3043F9B819AD2F9B /* [CP] Embed Pods Frameworks */,
 				A5BDF402CBB7E18012C684EA /* [CP] Copy Pods Resources */,
+				A908AF161E1FD12900C4D955 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -345,6 +346,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bible Reading/Pods-Bible Reading-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A908AF161E1FD12900C4D955 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 9bb821623a6a3a8f8ffdb31736188945e60755c3 20be565bc84002f47fc076aaf3f6c4b22a99a5056ed52cd9bd9720daac3a4c42";
 		};
 		D2622CB7320C043909725D1F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

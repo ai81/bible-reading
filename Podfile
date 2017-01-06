@@ -9,6 +9,8 @@ target 'Bible Reading' do
   pod 'FontAwesome.swift'
   pod 'RMDateSelectionViewController'
   pod 'InAppSettingsKit'
+  pod 'Fabric'
+  pod 'Crashlytics'
   
   target 'Bible ReadingTests' do
     inherit! :search_paths
