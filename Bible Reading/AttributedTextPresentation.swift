@@ -35,6 +35,10 @@ class AttributedTextPresentation {
                     }
                     str.append(NSAttributedString(string: part.text, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: fontSize)]))
                 }
+                let lastChar = str.mutableString.substring(from: str.mutableString.length - 1)
+                if lastChar == "," || lastChar == "-" || lastChar == ")"  || lastChar == ":"  || lastChar == ";" {
+                    str.mutableString.replaceCharacters(in: NSMakeRange(str.mutableString.length - 1, 1), with: ".")
+                }
             }
             return str
         }
