@@ -192,11 +192,11 @@ extension BibleRef {
     // return book name + remaining
     static func extractBookName(ref: String) -> (String?, String) {
         let components: [String] = ref.components(separatedBy: " ").filter { !$0.isEmpty }
-        if let book_name = AbbrevToBookName.map(abbrev: components.isEmpty ? "" : components[0]) {
-            return (book_name, components.dropFirst().joined(separator: " "))
-        }
         if let book_name = AbbrevToBookName.map(abbrev: components.count < 2 ? "" : components[0] + " " + components[1]) {
             return (book_name, components.dropFirst().dropFirst().joined(separator: " "))
+        }
+        if let book_name = AbbrevToBookName.map(abbrev: components.isEmpty ? "" : components[0]) {
+            return (book_name, components.dropFirst().joined(separator: " "))
         }
         return (nil, ref)
     }
