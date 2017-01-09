@@ -13,7 +13,8 @@ import InAppSettingsKit
 
 class ViewController: UIViewController, IASKSettingsDelegate {
     fileprivate var _appSettingsViewController : IASKAppSettingsViewController? = nil
-
+    @IBOutlet var leftSwipe: UISwipeGestureRecognizer!
+    @IBOutlet var rightSwipe: UISwipeGestureRecognizer!
     @IBOutlet weak var showSettingsButton: UIBarButtonItem!
     @IBOutlet weak var changeDate: UIBarButtonItem!
     @IBOutlet weak var textView: UITextView!
@@ -138,6 +139,18 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     func settingsViewControllerDidEnd(_ sender:IASKAppSettingsViewController)
     {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func leftSwipeAction(_ sender: Any) {
+        self.date = Calendar.current.date(byAdding: .day, value: 1, to: self.date)!
+        self.setupDateTime = Date()
+        reload()
+    }
+    
+    @IBAction func rightSwipeAction(_ sender: Any) {
+        self.date = Calendar.current.date(byAdding: .day, value: -1, to: self.date)!
+        self.setupDateTime = Date()
+        reload()
     }
 }
 

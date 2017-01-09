@@ -25,8 +25,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QD5-2d-ZKY">
                                 <rect key="frame" x="4" y="0.0" width="367" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="z2D-pn-l9q" appends="YES" id="fP9-ZG-xEm"/>
+                                    <outletCollection property="gestureRecognizers" destination="YZB-93-Osq" appends="YES" id="xuI-UH-eXP"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,11 +56,23 @@
                     </navigationItem>
                     <connections>
                         <outlet property="changeDate" destination="j59-dU-Dnt" id="YqS-Pa-jzk"/>
+                        <outlet property="leftSwipe" destination="z2D-pn-l9q" id="0o4-D7-AVN"/>
+                        <outlet property="rightSwipe" destination="YZB-93-Osq" id="jGk-7z-0WU"/>
                         <outlet property="showSettingsButton" destination="G96-jz-Tn8" id="1rc-w9-BIL"/>
                         <outlet property="textView" destination="QD5-2d-ZKY" id="enU-Qc-SI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="z2D-pn-l9q">
+                    <connections>
+                        <action selector="leftSwipeAction:" destination="BYZ-38-t0r" id="u8s-Zu-kVd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="YZB-93-Osq">
+                    <connections>
+                        <action selector="rightSwipeAction:" destination="BYZ-38-t0r" id="EmQ-y1-O3q"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2015.2" y="107.49625187406298"/>
         </scene>
