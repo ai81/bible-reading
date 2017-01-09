@@ -19,6 +19,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     @IBOutlet weak var textView: UITextView!
     private var bible: Bible?
     private var date = Date()
+    private var setupDateTime = Date()
     private var oldOffset: CGPoint?
     
     private func dateToString(date: Date) -> String {
@@ -62,6 +63,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     @IBAction func changeDateAction(_ sender: Any) {
         let selectAction = RMAction<UIDatePicker>(title: "Выбрать", style: RMActionStyle.done) { controller in
             self.date = controller.contentView.date
+            self.setupDateTime = Date()
             self.reload()
         }
         let cancelAction = RMAction<UIDatePicker>(title: "Отмена", style: RMActionStyle.cancel) { _ in
@@ -85,29 +87,52 @@ class ViewController: UIViewController, IASKSettingsDelegate {
         self.navigationController?.pushViewController(self.appSettingsViewController(), animated: true)
     }
     
-    private func reload() {
+    func reload() {
         if let o = self.oldOffset {
             self.textView.contentOffset = o
         }
+        
+        updateDate()
         
         self.title = dateToString(date: self.date)
         
         do {
             let ref = AllRefsPerDayHolder.findForDay(date: self.date)
         
-            let result = try ref.map{ try DayRef(ref: $0) }.map {
-                try bible!.find(ref: $0)
+            var result: [BibleSearchResult]? = nil
+            if bible != nil {
+                try ref.map{ try DayRef(ref: $0) }.map {
+                    result = try bible!.find(ref: $0)
+                }
             }
             
             var fontSize = UserDefaults.standard.integer(forKey: "font_size")
             fontSize = fontSize == 0 ? 16 : fontSize
-            self.textView.attributedText = AttributedTextPresentation.present(date: self.date,
-                                                                              resultOpt: result,
-                                                                              fontSize: CGFloat(fontSize))
+            if self.textView != nil {
+                self.textView.attributedText = AttributedTextPresentation.present(date: self.date,
+                                                                                  resultOpt: result,
+                                                                                  fontSize: CGFloat(fontSize))
+            }
             
         } catch let ex {
             NSLog("error during setup text for date \(self.date): \(ex)")
             self.textView.text = ""
+        }
+    }
+    
+    private func updateDate() {
+        let now = Date()
+        let currentComponents = Calendar.current.dateComponents([.year, .month, .day], from: now)
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day], from: self.date)
+        let setupDateTimeComponents = Calendar.current.dateComponents([.year, .month, .day], from: self.setupDateTime)
+        if ((dateComponents.year == setupDateTimeComponents.year &&
+            dateComponents.month == setupDateTimeComponents.month &&
+            dateComponents.day == setupDateTimeComponents.day) &&
+            (currentComponents.year != dateComponents.year ||
+                currentComponents.month != dateComponents.month ||
+                currentComponents.day != dateComponents.day)) {
+            self.date = now
+            self.setupDateTime = now
         }
     }
     
