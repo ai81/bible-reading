@@ -88,10 +88,6 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     }
     
     func reload() {
-        if let o = self.oldOffset {
-            self.textView.contentOffset = o
-        }
-        
         updateDate()
         
         self.title = dateToString(date: self.date)
@@ -112,11 +108,13 @@ class ViewController: UIViewController, IASKSettingsDelegate {
                 self.textView.attributedText = AttributedTextPresentation.present(date: self.date,
                                                                                   resultOpt: result,
                                                                                   fontSize: CGFloat(fontSize))
+                if let o = self.oldOffset {
+                    self.textView.contentOffset = o
+                }
             }
             
         } catch let ex {
             NSLog("error during setup text for date \(self.date): \(ex)")
-            self.textView.text = ""
         }
     }
     
