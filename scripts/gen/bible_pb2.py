@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_pb=_b('\n\x0b\x62ible.proto\x12\nBibleProto\"G\n\x0c\x42ibleMessage\x12\x0f\n\x07version\x18\x01 \x02(\x05\x12&\n\x05\x62ooks\x18\x02 \x03(\x0b\x32\x17.BibleProto.BookMessage\"j\n\x0b\x42ookMessage\x12\x0f\n\x07version\x18\x01 \x02(\x05\x12\r\n\x05index\x18\x02 \x01(\x05\x12\r\n\x05title\x18\x03 \x01(\t\x12,\n\x08\x63hapters\x18\x04 \x03(\x0b\x32\x1a.BibleProto.ChapterMessage\"Z\n\x0e\x43hapterMessage\x12\x0f\n\x07version\x18\x01 \x02(\x05\x12\x0e\n\x06number\x18\x02 \x01(\x05\x12\'\n\x06verses\x18\x03 \x03(\x0b\x32\x17.BibleProto.VersMessage\"=\n\x0bVersMessage\x12\x0f\n\x07version\x18\x01 \x02(\x05\x12\x0f\n\x07vnumber\x18\x02 \x01(\x05\x12\x0c\n\x04text\x18\x03 \x01(\tB\x02H\x01')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -212,6 +211,7 @@ DESCRIPTOR.message_types_by_name['BibleMessage'] = _BIBLEMESSAGE
 DESCRIPTOR.message_types_by_name['BookMessage'] = _BOOKMESSAGE
 DESCRIPTOR.message_types_by_name['ChapterMessage'] = _CHAPTERMESSAGE
 DESCRIPTOR.message_types_by_name['VersMessage'] = _VERSMESSAGE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 BibleMessage = _reflection.GeneratedProtocolMessageType('BibleMessage', (_message.Message,), dict(
   DESCRIPTOR = _BIBLEMESSAGE,

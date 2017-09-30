@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
-        print("local notification: \(notification.alertBody)")
+        print("local notification: \(String(describing: notification.alertBody))")
     }
 
 }
