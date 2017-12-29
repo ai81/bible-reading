@@ -39,7 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        ((UIApplication.shared.windows[0].rootViewController! as! UINavigationController).topViewController! as! ViewController).reload()
+        if let controller = (UIApplication.shared.windows[0].rootViewController! as! UINavigationController).topViewController! as? ViewController {
+            controller.reload()
+        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
