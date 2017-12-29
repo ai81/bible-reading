@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RMDateSelectionViewController
+import DatePickerDialog
 import FontAwesome_swift
 import InAppSettingsKit
 
@@ -62,23 +62,14 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     }
     
     @IBAction func changeDateAction(_ sender: Any) {
-        let selectAction = RMAction<UIDatePicker>(title: "Выбрать", style: RMActionStyle.done) { controller in
-            self.date = controller.contentView.date
-            self.setupDateTime = Date()
-            self.reload()
+        DatePickerDialog().show("Новая дата", doneButtonTitle: "Выбрать", cancelButtonTitle: "Отмена", datePickerMode: .date) {
+            (date) -> Void in
+            if let dt = date {
+                self.date = dt
+                self.setupDateTime = Date()
+                self.reload()
+            }
         }
-        let cancelAction = RMAction<UIDatePicker>(title: "Отмена", style: RMActionStyle.cancel) { _ in
-        }
-        let actionController = RMDateSelectionViewController(style: RMActionControllerStyle.white, title: "Новая дата", message: nil, select: selectAction, andCancel: cancelAction)!;
-        
-        let datePicker = actionController.datePicker!
-        datePicker.datePickerMode = UIDatePickerMode.date
-        let dateStringFormatter = DateFormatter()
-        dateStringFormatter.dateFormat = "yyyy-MM-dd"
-        datePicker.minimumDate = dateStringFormatter.date(from: "2017-01-01")
-        datePicker.maximumDate = dateStringFormatter.date(from: "2018-12-31")
-        
-        present(actionController, animated: true, completion: nil)
     }
     
     

@@ -7,7 +7,7 @@ target 'Bible Reading' do
   pod 'ProtocolBuffers-Swift', '~> 3.0.21'
   pod 'GZIP'
   pod 'FontAwesome.swift'
-  pod 'RMDateSelectionViewController'
+  pod 'DatePickerDialog'
   pod 'InAppSettingsKit'
   pod 'Fabric'
   pod 'Crashlytics'
