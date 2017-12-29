@@ -53,6 +53,10 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         reload()
+        if UIScreen.main.nativeBounds.height == 2436 { // yes, dirty hack (((
+            self.textView.contentInset = UIEdgeInsets.init(top: 40, left: 0, bottom: 0, right: 0)
+            self.textView.contentOffset = CGPoint(x: 0, y:-40)
+        }
         NotificationsSupport.reinstallNotifications()
     }
     
