@@ -70,9 +70,17 @@ class Bible_ReadingTests: XCTestCase {
     }
     
     func testAllRefsPer2017() throws {
+        try checkRefs(refs: AllRefsPerDayHolder.refs2017)
+    }
+    
+    func testAllRefsPer2018() throws {
+        try checkRefs(refs: AllRefsPerDayHolder.refs2018)
+    }
+    
+    func checkRefs(refs: [String]) throws {
         let path = Bundle.main.path(forResource: "bibles/ru.proto", ofType: "gz")
         let bible = BibleReader.read(filename: path!)
-        for ref in AllRefsPerDayHolder.refs2107 {
+        for ref in refs {
             do {
                 if !ref.isEmpty {
                     let r = try DayRef(ref: ref)
@@ -80,12 +88,12 @@ class Bible_ReadingTests: XCTestCase {
                     XCTAssert(result.count > 0)
                 }
             } catch let ex {
-               NSLog("error in work with ref \(ref): \(ex)")
+                NSLog("error in work with ref \(ref): \(ex)")
                 XCTAssertEqual(ref, "", "wrong ref")
             }
         }
     }
-    
+
     func testHolidaysHolder() throws {
         let cal = Calendar.current
         let components = DateComponents(year: 2017, month: 1, day: 1, hour: 1)
