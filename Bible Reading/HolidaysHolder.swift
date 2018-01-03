@@ -44,11 +44,11 @@ class HolidaysHolder {
     static public func findHoliday(date: Date) -> Holiday? {
         let cal = Calendar.current
         let year = cal.component(Calendar.Component.year, from: date)
-        if year != 2017 {
+        if year != 2017  && year != 2018 {
             return nil
         }
         let day = cal.ordinality(of: .day, in: .year, for: date)
-        return dateToHoliday2017[day!]
+        return year == 2017 ? dateToHoliday2017[day!] : dateToHoliday2018[day!]
     }
     
     static private func strToOrdinal(str: String) -> Int {
@@ -61,6 +61,39 @@ class HolidaysHolder {
         let date = cal.date(from: components)!
         return cal.ordinality(of: .day, in: .year, for: date)!
     }
+    
+    private static let dateToHoliday2018: [Int: Holiday] = Dictionary ([
+        
+        "1.1": Holiday(type: .Celebration, name: "Пресвятая Богородица Мария"),
+        "1.6": Holiday(type: .Celebration, name: "Богоявление"),
+        "1.7": Holiday(type: .Holiday, name: "Крещение Господне"),
+        "2.2": Holiday(type: .Holiday, name: "Сретение Господне"),
+        "2.14": Holiday(type: .Holiday, name: "Пепельная Среда"),
+        "3.19": Holiday(type: .Celebration, name: "Св. Иосиф, Обручник Пресвятой Девы Марии"),
+        "3.25": Holiday(type: .Celebration, name: "Вербное Воскресенье"),
+        "4.1": Holiday(type: .Celebration, name: "Пасха. Светлое Христово Воскресение"),
+        "4.8": Holiday(type: .Celebration, name: "Божьего Милосердия"),
+        "4.9": Holiday(type: .Celebration, name: "Благовещение Господне"),
+        "5.10": Holiday(type: .Celebration, name: "Вознесение Господне"),
+        "5.20": Holiday(type: .Celebration, name: "Сошествие Святого Духа. Пятидесятница"),
+        "5.27": Holiday(type: .Celebration, name: "Персвятая Троица"),
+        "6.3": Holiday(type: .Celebration, name: "Пресвятые Тело и Кровь Господни"),
+        "6.8": Holiday(type: .Celebration, name: "Святейшее Сердце Иисуса"),
+        "6.24": Holiday(type: .Celebration, name: "Рождество св. Иоанна Крестителя"),
+        "6.29": Holiday(type: .Celebration, name: "свв. Первоверховные апостолы Пётр и Павел"),
+        "8.6": Holiday(type: .Celebration, name: "Преображение Господне"),
+        "8.15": Holiday(type: .Celebration, name: "Успение Пресвятой Богородицы"),
+        "9.8": Holiday(type: .Holiday, name: "Рождество Пресвятой Богородицы"),
+        "9.14": Holiday(type: .Holiday, name: "Воздвижение Святого Креста Господня"),
+        "9.29": Holiday(type: .Holiday, name: "свв. Архангелы Михаил, Гавриил и Рафаил"),
+        "11.1": Holiday(type: .Celebration, name: "Все Святые"),
+        "11.25": Holiday(type: .Holiday, name: "Господь наш Иисус Христос, Царь Вселенной"),
+        "11.30": Holiday(type: .Celebration, name: "св. Андрей Первозванный, Апостол"),
+        "12.8": Holiday(type: .Celebration, name: "Непорочное Зачатие Пресвятой Девы Марии"),
+        "12.25": Holiday(type: .Celebration, name: "Рождество Христово"),
+        "12.30": Holiday(type: .Holiday, name: "Святое Семейство - Иисус, Мария и Иосиф"),
+        
+        ].map { (HolidaysHolder.strToOrdinal(str: $0), $1)    })
     
     private static let dateToHoliday2017: [Int: Holiday] = Dictionary ([
         
