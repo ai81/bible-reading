@@ -18,6 +18,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     @IBOutlet weak var showSettingsButton: UIBarButtonItem!
     @IBOutlet weak var changeDate: UIBarButtonItem!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     private var bible: Bible?
     private var date = Date()
     private var setupDateTime = Date()
@@ -43,23 +44,28 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = Bundle.main.path(forResource: "bibles/ru.proto", ofType: "gz")
-        self.bible = BibleReader.read(filename: path!)
+        self.activityIndicator.startAnimating()
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            let path = Bundle.main.path(forResource: "bibles/ru.proto", ofType: "gz")
+            self.bible = BibleReader.read(filename: path!)
+            DispatchQueue.main.async() {
+                self.activityIndicator.stopAnimating()
+                self.reload()
+                if UIScreen.main.nativeBounds.height == 2436 { // yes, dirty hack (((
+                    self.textView.contentInset = UIEdgeInsets.init(top: 40, left: 0, bottom: 0, right: 0)
+                    self.textView.contentOffset = CGPoint(x: 0, y:-120)
+                } else {
+                    self.textView.contentOffset = CGPoint(x: 0, y:-60)
+                }
+                NotificationsSupport.reinstallNotifications()
+            }
+        }
         
         self.changeDate.image = UIImage.fontAwesomeIcon(name: .calendarO, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
         self.showSettingsButton.image = UIImage.fontAwesomeIcon(name: .sliders, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        reload()
-        if UIScreen.main.nativeBounds.height == 2436 { // yes, dirty hack (((
-            self.textView.contentInset = UIEdgeInsets.init(top: 40, left: 0, bottom: 0, right: 0)
-            self.textView.contentOffset = CGPoint(x: 0, y:-40)
-        }
-        NotificationsSupport.reinstallNotifications()
-    }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.oldOffset = self.textView.contentOffset

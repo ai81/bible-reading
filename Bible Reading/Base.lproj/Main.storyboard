@@ -33,12 +33,17 @@
                                     <outletCollection property="gestureRecognizers" destination="YZB-93-Osq" appends="YES" id="xuI-UH-eXP"/>
                                 </connections>
                             </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7Lp-fZ-aED">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QD5-2d-ZKY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-8" id="3Nh-y7-1qO"/>
+                            <constraint firstItem="7Lp-fZ-aED" firstAttribute="centerY" secondItem="QD5-2d-ZKY" secondAttribute="centerY" id="EEB-7F-F36"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QD5-2d-ZKY" secondAttribute="bottom" id="J0c-Ba-1nq"/>
                             <constraint firstItem="QD5-2d-ZKY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-12" id="NBt-TT-Ohr"/>
+                            <constraint firstItem="7Lp-fZ-aED" firstAttribute="centerX" secondItem="QD5-2d-ZKY" secondAttribute="centerX" id="biw-HJ-NwF"/>
                             <constraint firstItem="QD5-2d-ZKY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="csV-Si-6EW"/>
                         </constraints>
                     </view>
@@ -55,6 +60,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="7Lp-fZ-aED" id="5my-kk-igq"/>
                         <outlet property="changeDate" destination="j59-dU-Dnt" id="YqS-Pa-jzk"/>
                         <outlet property="leftSwipe" destination="z2D-pn-l9q" id="0o4-D7-AVN"/>
                         <outlet property="rightSwipe" destination="YZB-93-Osq" id="jGk-7z-0WU"/>

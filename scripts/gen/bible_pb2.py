@@ -18,8 +18,8 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='bible.proto',
   package='BibleProto',
-  syntax='proto2',
-  serialized_pb=_b('\n\x0b\x62ible.proto\x12\nBibleProto\"G\n\x0c\x42ibleMessage\x12\x0f\n\x07version\x18\x01 \x02(\x05\x12&\n\x05\x62ooks\x18\x02 \x03(\x0b\x32\x17.BibleProto.BookMessage\"j\n\x0b\x42ookMessage\x12\x0f\n\x07version\x18\x01 \x02(\x05\x12\r\n\x05index\x18\x02 \x01(\x05\x12\r\n\x05title\x18\x03 \x01(\t\x12,\n\x08\x63hapters\x18\x04 \x03(\x0b\x32\x1a.BibleProto.ChapterMessage\"Z\n\x0e\x43hapterMessage\x12\x0f\n\x07version\x18\x01 \x02(\x05\x12\x0e\n\x06number\x18\x02 \x01(\x05\x12\'\n\x06verses\x18\x03 \x03(\x0b\x32\x17.BibleProto.VersMessage\"=\n\x0bVersMessage\x12\x0f\n\x07version\x18\x01 \x02(\x05\x12\x0f\n\x07vnumber\x18\x02 \x01(\x05\x12\x0c\n\x04text\x18\x03 \x01(\tB\x02H\x01')
+  syntax='proto3',
+  serialized_pb=_b('\n\x0b\x62ible.proto\x12\nBibleProto\"G\n\x0c\x42ibleMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12&\n\x05\x62ooks\x18\x02 \x03(\x0b\x32\x17.BibleProto.BookMessage\"j\n\x0b\x42ookMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\r\n\x05index\x18\x02 \x01(\x05\x12\r\n\x05title\x18\x03 \x01(\t\x12,\n\x08\x63hapters\x18\x04 \x03(\x0b\x32\x1a.BibleProto.ChapterMessage\"Z\n\x0e\x43hapterMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\x0e\n\x06number\x18\x02 \x01(\x05\x12\'\n\x06verses\x18\x03 \x03(\x0b\x32\x17.BibleProto.VersMessage\"=\n\x0bVersMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\x0f\n\x07vnumber\x18\x02 \x01(\x05\x12\x0c\n\x04text\x18\x03 \x01(\tB\x02H\x01\x62\x06proto3')
 )
 
 
@@ -34,7 +34,7 @@ _BIBLEMESSAGE = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='version', full_name='BibleProto.BibleMessage.version', index=0,
-      number=1, type=5, cpp_type=1, label=2,
+      number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -54,7 +54,7 @@ _BIBLEMESSAGE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
-  syntax='proto2',
+  syntax='proto3',
   extension_ranges=[],
   oneofs=[
   ],
@@ -72,7 +72,7 @@ _BOOKMESSAGE = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='version', full_name='BibleProto.BookMessage.version', index=0,
-      number=1, type=5, cpp_type=1, label=2,
+      number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -106,7 +106,7 @@ _BOOKMESSAGE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
-  syntax='proto2',
+  syntax='proto3',
   extension_ranges=[],
   oneofs=[
   ],
@@ -124,7 +124,7 @@ _CHAPTERMESSAGE = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='version', full_name='BibleProto.ChapterMessage.version', index=0,
-      number=1, type=5, cpp_type=1, label=2,
+      number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -151,7 +151,7 @@ _CHAPTERMESSAGE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
-  syntax='proto2',
+  syntax='proto3',
   extension_ranges=[],
   oneofs=[
   ],
@@ -169,7 +169,7 @@ _VERSMESSAGE = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='version', full_name='BibleProto.VersMessage.version', index=0,
-      number=1, type=5, cpp_type=1, label=2,
+      number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -196,7 +196,7 @@ _VERSMESSAGE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
-  syntax='proto2',
+  syntax='proto3',
   extension_ranges=[],
   oneofs=[
   ],
