@@ -65,6 +65,11 @@ class ViewController: UIViewController, IASKSettingsDelegate {
         self.changeDate.image = UIImage.fontAwesomeIcon(name: .calendarO, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
         self.showSettingsButton.image = UIImage.fontAwesomeIcon(name: .sliders, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reload()
+    }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
