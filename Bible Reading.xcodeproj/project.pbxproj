@@ -14,7 +14,8 @@
 		A91A1D641E1ACD9C00225E4F /* BibleReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A1D631E1ACD9C00225E4F /* BibleReader.swift */; };
 		A91A1D781E1BFF8300225E4F /* BibleSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A1D771E1BFF8300225E4F /* BibleSearchResult.swift */; };
 		A91A1D7A1E1C11BE00225E4F /* AbbrevToBookName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A1D791E1C11BE00225E4F /* AbbrevToBookName.swift */; };
-		A9A2311E1F80047F00E21298 /* BibleProto.Bible.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2311D1F80047E00E21298 /* BibleProto.Bible.proto.swift */; };
+		A99017CF21CD960A001AC6D8 /* bible.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99017CE21CD960A001AC6D8 /* bible.pb.swift */; };
+		A99017D021CD960A001AC6D8 /* bible.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99017CE21CD960A001AC6D8 /* bible.pb.swift */; };
 		A9A564011E1D4C4800601C64 /* AllRefsPerDayHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A564001E1D4C4800601C64 /* AllRefsPerDayHolder.swift */; };
 		A9A564031E1D77A000601C64 /* AttributedTextPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A564021E1D77A000601C64 /* AttributedTextPresentation.swift */; };
 		A9A564051E1E675000601C64 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9A564041E1E675000601C64 /* Settings.bundle */; };
@@ -51,7 +52,7 @@
 		A91A1D761E1B196100225E4F /* BibleReading-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BibleReading-Bridging-Header.h"; sourceTree = "<group>"; };
 		A91A1D771E1BFF8300225E4F /* BibleSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibleSearchResult.swift; sourceTree = "<group>"; };
 		A91A1D791E1C11BE00225E4F /* AbbrevToBookName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbbrevToBookName.swift; sourceTree = "<group>"; };
-		A9A2311D1F80047E00E21298 /* BibleProto.Bible.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BibleProto.Bible.proto.swift; path = generated/BibleProto.Bible.proto.swift; sourceTree = "<group>"; };
+		A99017CE21CD960A001AC6D8 /* bible.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = bible.pb.swift; path = generated/bible.pb.swift; sourceTree = "<group>"; };
 		A9A564001E1D4C4800601C64 /* AllRefsPerDayHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRefsPerDayHolder.swift; sourceTree = "<group>"; };
 		A9A564021E1D77A000601C64 /* AttributedTextPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedTextPresentation.swift; sourceTree = "<group>"; };
 		A9A564041E1E675000601C64 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -99,7 +100,7 @@
 		A91A1D681E1AE1B900225E4F /* generated */ = {
 			isa = PBXGroup;
 			children = (
-				A9A2311D1F80047E00E21298 /* BibleProto.Bible.proto.swift */,
+				A99017CE21CD960A001AC6D8 /* bible.pb.swift */,
 			);
 			name = generated;
 			sourceTree = "<group>";
@@ -241,7 +242,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Anton Ivanov";
 				TargetAttributes = {
 					A9B34C4A1E181855004FDFD6 = {
@@ -329,7 +330,7 @@
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/GZIP/GZIP.framework",
 				"${BUILT_PRODUCTS_DIR}/InAppSettingsKit/InAppSettingsKit.framework",
-				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift/ProtocolBuffers.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -337,7 +338,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GZIP.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InAppSettingsKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -438,11 +439,11 @@
 				A908AF151E1FC82400C4D955 /* NotificationsSupport.swift in Sources */,
 				A91A1D641E1ACD9C00225E4F /* BibleReader.swift in Sources */,
 				A908AF131E1EEB6A00C4D955 /* HolidaysHolder.swift in Sources */,
-				A9A2311E1F80047F00E21298 /* BibleProto.Bible.proto.swift in Sources */,
 				A91A1D781E1BFF8300225E4F /* BibleSearchResult.swift in Sources */,
 				A9A564011E1D4C4800601C64 /* AllRefsPerDayHolder.swift in Sources */,
 				A91A1D7A1E1C11BE00225E4F /* AbbrevToBookName.swift in Sources */,
 				A9B34C4F1E181855004FDFD6 /* AppDelegate.swift in Sources */,
+				A99017CF21CD960A001AC6D8 /* bible.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B34C641E181855004FDFD6 /* Bible_ReadingTests.swift in Sources */,
+				A99017D021CD960A001AC6D8 /* bible.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +499,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -504,6 +507,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -552,6 +556,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -559,6 +564,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -633,6 +639,7 @@
 				INFOPLIST_FILE = "Bible ReadingTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.antonivanov.Bible-ReadingTests";
+				PRODUCT_MODULE_NAME = BibleReadingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -650,6 +657,7 @@
 				INFOPLIST_FILE = "Bible ReadingTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.antonivanov.Bible-ReadingTests";
+				PRODUCT_MODULE_NAME = BibleReadingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;

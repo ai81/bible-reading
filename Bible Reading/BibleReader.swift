@@ -14,7 +14,7 @@ class BibleReader {
         do {
             if let data = NSData.init(contentsOfFile: filename) {
                 if let gunzipped = data.gunzipped() {
-                    let msg = try BibleProto.BibleMessage.parseFrom(data: gunzipped)
+                    let msg = try BibleMessage(serializedData: gunzipped)
                     return try BibleProtoConverter.fromMessage(msg: msg)
                 } else {
                     NSLog("error during unarchive file \(filename)")

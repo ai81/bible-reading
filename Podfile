@@ -4,7 +4,7 @@ target 'Bible Reading' do
   use_frameworks!
 
   # Pods for Bible Reading
-  pod 'ProtocolBuffers-Swift', '~> 3.0.21'
+  pod 'SwiftProtobuf', '~> 1.0'
   pod 'GZIP'
   pod 'FontAwesome.swift'
   pod 'DatePickerDialog'
@@ -19,7 +19,7 @@ target 'Bible Reading' do
   
   post_install do |installer|
       installer.pods_project.targets.each do |target|
-          if ['ProtocolBuffers-Swift', 'FontAwesome.swift'].include? target.name
+          if ['FontAwesome.swift'].include? target.name
               target.build_configurations.each do |config|
                   config.build_settings['SWIFT_VERSION'] = '3.2'
               end

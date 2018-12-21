@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -17,9 +16,10 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='bible.proto',
-  package='BibleProto',
+  package='',
   syntax='proto3',
-  serialized_pb=_b('\n\x0b\x62ible.proto\x12\nBibleProto\"G\n\x0c\x42ibleMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12&\n\x05\x62ooks\x18\x02 \x03(\x0b\x32\x17.BibleProto.BookMessage\"j\n\x0b\x42ookMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\r\n\x05index\x18\x02 \x01(\x05\x12\r\n\x05title\x18\x03 \x01(\t\x12,\n\x08\x63hapters\x18\x04 \x03(\x0b\x32\x1a.BibleProto.ChapterMessage\"Z\n\x0e\x43hapterMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\x0e\n\x06number\x18\x02 \x01(\x05\x12\'\n\x06verses\x18\x03 \x03(\x0b\x32\x17.BibleProto.VersMessage\"=\n\x0bVersMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\x0f\n\x07vnumber\x18\x02 \x01(\x05\x12\x0c\n\x04text\x18\x03 \x01(\tB\x02H\x01\x62\x06proto3')
+  serialized_options=_b('H\001'),
+  serialized_pb=_b('\n\x0b\x62ible.proto\"<\n\x0c\x42ibleMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\x1b\n\x05\x62ooks\x18\x02 \x03(\x0b\x32\x0c.BookMessage\"_\n\x0b\x42ookMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\r\n\x05index\x18\x02 \x01(\x05\x12\r\n\x05title\x18\x03 \x01(\t\x12!\n\x08\x63hapters\x18\x04 \x03(\x0b\x32\x0f.ChapterMessage\"O\n\x0e\x43hapterMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\x0e\n\x06number\x18\x02 \x01(\x05\x12\x1c\n\x06verses\x18\x03 \x03(\x0b\x32\x0c.VersMessage\"=\n\x0bVersMessage\x12\x0f\n\x07version\x18\x01 \x01(\x05\x12\x0f\n\x07vnumber\x18\x02 \x01(\x05\x12\x0c\n\x04text\x18\x03 \x01(\tB\x02H\x01\x62\x06proto3')
 )
 
 
@@ -27,181 +27,181 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _BIBLEMESSAGE = _descriptor.Descriptor(
   name='BibleMessage',
-  full_name='BibleProto.BibleMessage',
+  full_name='BibleMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='version', full_name='BibleProto.BibleMessage.version', index=0,
+      name='version', full_name='BibleMessage.version', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='books', full_name='BibleProto.BibleMessage.books', index=1,
+      name='books', full_name='BibleMessage.books', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=27,
-  serialized_end=98,
+  serialized_start=15,
+  serialized_end=75,
 )
 
 
 _BOOKMESSAGE = _descriptor.Descriptor(
   name='BookMessage',
-  full_name='BibleProto.BookMessage',
+  full_name='BookMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='version', full_name='BibleProto.BookMessage.version', index=0,
+      name='version', full_name='BookMessage.version', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='index', full_name='BibleProto.BookMessage.index', index=1,
+      name='index', full_name='BookMessage.index', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='title', full_name='BibleProto.BookMessage.title', index=2,
+      name='title', full_name='BookMessage.title', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='chapters', full_name='BibleProto.BookMessage.chapters', index=3,
+      name='chapters', full_name='BookMessage.chapters', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=100,
-  serialized_end=206,
+  serialized_start=77,
+  serialized_end=172,
 )
 
 
 _CHAPTERMESSAGE = _descriptor.Descriptor(
   name='ChapterMessage',
-  full_name='BibleProto.ChapterMessage',
+  full_name='ChapterMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='version', full_name='BibleProto.ChapterMessage.version', index=0,
+      name='version', full_name='ChapterMessage.version', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='number', full_name='BibleProto.ChapterMessage.number', index=1,
+      name='number', full_name='ChapterMessage.number', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='verses', full_name='BibleProto.ChapterMessage.verses', index=2,
+      name='verses', full_name='ChapterMessage.verses', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=208,
-  serialized_end=298,
+  serialized_start=174,
+  serialized_end=253,
 )
 
 
 _VERSMESSAGE = _descriptor.Descriptor(
   name='VersMessage',
-  full_name='BibleProto.VersMessage',
+  full_name='VersMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='version', full_name='BibleProto.VersMessage.version', index=0,
+      name='version', full_name='VersMessage.version', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='vnumber', full_name='BibleProto.VersMessage.vnumber', index=1,
+      name='vnumber', full_name='VersMessage.vnumber', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='text', full_name='BibleProto.VersMessage.text', index=2,
+      name='text', full_name='VersMessage.text', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=300,
-  serialized_end=361,
+  serialized_start=255,
+  serialized_end=316,
 )
 
 _BIBLEMESSAGE.fields_by_name['books'].message_type = _BOOKMESSAGE
@@ -216,32 +216,31 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 BibleMessage = _reflection.GeneratedProtocolMessageType('BibleMessage', (_message.Message,), dict(
   DESCRIPTOR = _BIBLEMESSAGE,
   __module__ = 'bible_pb2'
-  # @@protoc_insertion_point(class_scope:BibleProto.BibleMessage)
+  # @@protoc_insertion_point(class_scope:BibleMessage)
   ))
 _sym_db.RegisterMessage(BibleMessage)
 
 BookMessage = _reflection.GeneratedProtocolMessageType('BookMessage', (_message.Message,), dict(
   DESCRIPTOR = _BOOKMESSAGE,
   __module__ = 'bible_pb2'
-  # @@protoc_insertion_point(class_scope:BibleProto.BookMessage)
+  # @@protoc_insertion_point(class_scope:BookMessage)
   ))
 _sym_db.RegisterMessage(BookMessage)
 
 ChapterMessage = _reflection.GeneratedProtocolMessageType('ChapterMessage', (_message.Message,), dict(
   DESCRIPTOR = _CHAPTERMESSAGE,
   __module__ = 'bible_pb2'
-  # @@protoc_insertion_point(class_scope:BibleProto.ChapterMessage)
+  # @@protoc_insertion_point(class_scope:ChapterMessage)
   ))
 _sym_db.RegisterMessage(ChapterMessage)
 
 VersMessage = _reflection.GeneratedProtocolMessageType('VersMessage', (_message.Message,), dict(
   DESCRIPTOR = _VERSMESSAGE,
   __module__ = 'bible_pb2'
-  # @@protoc_insertion_point(class_scope:BibleProto.VersMessage)
+  # @@protoc_insertion_point(class_scope:VersMessage)
   ))
 _sym_db.RegisterMessage(VersMessage)
 
 
-DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('H\001'))
+DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

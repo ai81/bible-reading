@@ -21,7 +21,7 @@ class BibleProtoConverter {
     private static let CHAPTER_PROTO_VERSION: Int32 = 1
     private static let VERS_PROTO_VERSION: Int32 = 1
     
-    static func fromMessage(msg: BibleProto.BibleMessage) throws -> Bible {
+    static func fromMessage(msg: BibleMessage) throws -> Bible {
         guard msg.version == BIBLE_PROTO_VERSION else {
            throw BibleReadingErrors.invalidBibleProtoVersion
         }
