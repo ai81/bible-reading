@@ -52,7 +52,8 @@ class ViewController: UIViewController, IASKSettingsDelegate {
             DispatchQueue.main.async() {
                 self.activityIndicator.stopAnimating()
                 self.reload()
-                if UIScreen.main.nativeBounds.height == 2436 { // yes, dirty hack (((
+                let h = UIScreen.main.nativeBounds.height
+                if h == 2436 || h == 1792 || h == 2688 { // yes, dirty hack (((
                     self.textView.contentInset = UIEdgeInsets.init(top: 40, left: 0, bottom: 0, right: 0)
                     self.textView.contentOffset = CGPoint(x: 0, y:-120)
                 } else {
