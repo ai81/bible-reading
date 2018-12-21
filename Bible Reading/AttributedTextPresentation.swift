@@ -16,19 +16,19 @@ class AttributedTextPresentation {
             if let holiday = HolidaysHolder.findHoliday(date: date) {
                 let titleFontSizeCoeff: CGFloat = holiday.type == .Celebration ? 1.4 : 1.3
                 let titleFontColor = holiday.type == .Celebration ? UIColor(red: 184.0 / 255.0, green: 7.0 / 255.0, blue: 10.0/255.0, alpha: 1.0) : UIColor.black
-                str.append(NSAttributedString(string: holiday.name, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: fontSize * titleFontSizeCoeff), NSAttributedStringKey.foregroundColor: titleFontColor]))
+                str.append(NSAttributedString(string: holiday.name, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: fontSize * titleFontSizeCoeff), NSAttributedString.Key.foregroundColor: titleFontColor]))
                 str.append(NSAttributedString(string: "\n\n\n\n"))
             }
             for ref in refs {
                 if str.length > 0 {
                     str.append(NSAttributedString(string: "\n\n\n"))
                 }
-                str.append(NSAttributedString(string: ref.ref.original_ref, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: fontSize * 1.3), NSAttributedStringKey.foregroundColor: UIColor(red: 184.0 / 255.0, green: 7.0 / 255.0, blue: 10.0/255.0, alpha: 1.0)]))
+                str.append(NSAttributedString(string: ref.ref.original_ref, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: fontSize * 1.3), NSAttributedString.Key.foregroundColor: UIColor(red: 184.0 / 255.0, green: 7.0 / 255.0, blue: 10.0/255.0, alpha: 1.0)]))
                 str.append(NSAttributedString(string: "\n\n"))
                 let allVers = ref.vers.flatMap{ $0.1 }
                 var isFirstPart = true
                 for part in allVers {
-                    let attributed = NSMutableAttributedString(string: part.text, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: fontSize)])
+                    let attributed = NSMutableAttributedString(string: part.text, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: fontSize)])
                     if isFirstPart {
                         let firstChar = attributed.mutableString.substring(to: 1)
                         attributed.mutableString.replaceCharacters(in: NSMakeRange(0, 1), with: firstChar.uppercased())
