@@ -69,12 +69,11 @@ class Bible_ReadingTests: XCTestCase {
         XCTAssertEqual(r3.refs.count, 2)
     }
     
-    func testAllRefsPer2017() throws {
-        try checkRefs(refs: AllRefsPerDayHolder.refs2017)
-    }
-    
-    func testAllRefsPer2018() throws {
-        try checkRefs(refs: AllRefsPerDayHolder.refs2018)
+    func testAllRefs() throws {
+        for (year, refs) in AllRefsPerDayHolder.yearToRefs {
+            NSLog("Check year: \(year)")
+            try checkRefs(refs: refs)
+        }
     }
     
     func checkRefs(refs: [String]) throws {
