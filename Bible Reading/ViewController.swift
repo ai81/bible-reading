@@ -62,9 +62,8 @@ class ViewController: UIViewController, IASKSettingsDelegate {
                 NotificationsSupport.reinstallNotifications()
             }
         }
-        
-        self.changeDate.image = UIImage.fontAwesomeIcon(name: .calendarO, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
-        self.showSettingsButton.image = UIImage.fontAwesomeIcon(name: .sliders, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
+        self.changeDate.image = UIImage.fontAwesomeIcon(name: .calendarAlt, style: .regular, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
+        self.showSettingsButton.image = UIImage.fontAwesomeIcon(name: .slidersH, style: .solid, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
     }
     
     override func viewWillAppear(_ animated: Bool) {
