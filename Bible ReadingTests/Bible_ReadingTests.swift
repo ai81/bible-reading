@@ -70,9 +70,9 @@ class Bible_ReadingTests: XCTestCase {
     }
     
     func testAllRefs() throws {
-        for (year, refs) in AllRefsPerDayHolder.yearToRefs {
+        for year in AllRefsPerDayHolder.yearToRefs.keys.sorted(by: >) {
             NSLog("Check year: \(year)")
-            try checkRefs(refs: refs)
+            try checkRefs(refs: AllRefsPerDayHolder.yearToRefs[year]!)
         }
     }
     
