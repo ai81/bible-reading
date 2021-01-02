@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y7h-wW-0BO">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y7h-wW-0BO">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,11 +14,15 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Bible_Reading" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7Lp-fZ-aED">
+                                <rect key="frame" x="503.5" y="679.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QD5-2d-ZKY">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="30" y="50" width="964" height="1296"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <attributedString key="attributedText"/>
@@ -28,18 +32,24 @@
                                     <outletCollection property="gestureRecognizers" destination="YZB-93-Osq" appends="YES" id="xuI-UH-eXP"/>
                                 </connections>
                             </textView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7Lp-fZ-aED">
-                                <rect key="frame" x="189" y="457" width="37" height="37"/>
-                                <color key="color" systemColor="systemBlueColor"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rGk-je-RiL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QD5-2d-ZKY" firstAttribute="bottom" secondItem="rGk-je-RiL" secondAttribute="bottom" id="9yC-RI-k9m"/>
-                            <constraint firstItem="7Lp-fZ-aED" firstAttribute="centerX" secondItem="QD5-2d-ZKY" secondAttribute="centerX" id="HsO-ru-2jc"/>
-                            <constraint firstItem="QD5-2d-ZKY" firstAttribute="leading" secondItem="rGk-je-RiL" secondAttribute="leading" id="Sq8-ak-owe"/>
-                            <constraint firstItem="QD5-2d-ZKY" firstAttribute="trailing" secondItem="rGk-je-RiL" secondAttribute="trailing" id="TG8-mG-UFQ"/>
+                            <constraint firstItem="7Lp-fZ-aED" firstAttribute="centerX" secondItem="QD5-2d-ZKY" secondAttribute="centerX" constant="10" id="HsO-ru-2jc">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="QD5-2d-ZKY" firstAttribute="leading" secondItem="rGk-je-RiL" secondAttribute="leading" constant="20" id="Sq8-ak-owe">
+                                <variation key="widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="QD5-2d-ZKY" firstAttribute="trailing" secondItem="rGk-je-RiL" secondAttribute="trailing" constant="-20" id="TG8-mG-UFQ">
+                                <variation key="widthClass=compact" constant="-10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-20"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="-30"/>
+                            </constraint>
                             <constraint firstItem="7Lp-fZ-aED" firstAttribute="centerY" secondItem="QD5-2d-ZKY" secondAttribute="centerY" id="ri7-Ru-QNu"/>
                             <constraint firstItem="rGk-je-RiL" firstAttribute="top" secondItem="QD5-2d-ZKY" secondAttribute="top" id="y1J-MI-Tie"/>
                         </constraints>
@@ -85,7 +95,7 @@
                 <navigationController id="y7h-wW-0BO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ByQ-yk-9eq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
