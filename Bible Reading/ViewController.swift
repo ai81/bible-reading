@@ -103,7 +103,11 @@ class ViewController: UIViewController, IASKSettingsDelegate {
             }
             
             var fontSize = UserDefaults.standard.integer(forKey: "font_size")
-            fontSize = fontSize == 0 ? 16 : fontSize
+            var defaultFontSize = 16
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                defaultFontSize = 20
+            }
+            fontSize = fontSize == 0 ? defaultFontSize : fontSize
             if self.textView != nil {
                 self.textView.attributedText = AttributedTextPresentation.present(date: self.date,
                                                                                   resultOpt: result,
