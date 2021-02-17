@@ -17,10 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7Lp-fZ-aED">
-                                <rect key="frame" x="503.5" y="679.5" width="37" height="37"/>
-                                <color key="color" systemColor="systemBlueColor"/>
-                            </activityIndicatorView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QD5-2d-ZKY">
                                 <rect key="frame" x="30" y="50" width="964" height="1296"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -32,12 +28,16 @@
                                     <outletCollection property="gestureRecognizers" destination="YZB-93-Osq" appends="YES" id="xuI-UH-eXP"/>
                                 </connections>
                             </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7Lp-fZ-aED">
+                                <rect key="frame" x="493.5" y="679.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rGk-je-RiL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QD5-2d-ZKY" firstAttribute="bottom" secondItem="rGk-je-RiL" secondAttribute="bottom" id="9yC-RI-k9m"/>
-                            <constraint firstItem="7Lp-fZ-aED" firstAttribute="centerX" secondItem="QD5-2d-ZKY" secondAttribute="centerX" constant="10" id="HsO-ru-2jc">
+                            <constraint firstItem="7Lp-fZ-aED" firstAttribute="centerX" secondItem="QD5-2d-ZKY" secondAttribute="centerX" id="HsO-ru-2jc">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="QD5-2d-ZKY" firstAttribute="leading" secondItem="rGk-je-RiL" secondAttribute="leading" constant="20" id="Sq8-ak-owe">
