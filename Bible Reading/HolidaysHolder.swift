@@ -63,6 +63,50 @@ class HolidaysHolder {
         return cal.ordinality(of: .day, in: .year, for: date)!
     }
     
+    private static let dateToHoliday2024: [Int: Holiday] = Dictionary ([
+
+        "1.1": Holiday(type: .Celebration, name: "Пресвятая Богородица Мария"),
+        "1.6": Holiday(type: .Celebration, name: "Богоявление"),
+        "1.7": Holiday(type: .Holiday, name: "Крещение Господне"),
+        "1.25": Holiday(type: .Holiday, name: "Обращение св. Апостола Павла"),
+        "2.2": Holiday(type: .Holiday, name: "Сретение Господне"),
+        "2.14": Holiday(type: .Holiday, name: "Пепельная Среда"),
+        "3.19": Holiday(type: .Celebration, name: "Св. Иосиф, Обручник Пресвятой Девы Марии"),
+        "3.24": Holiday(type: .Celebration, name: "Вербное Воскресенье"),
+        "3.31": Holiday(type: .Celebration, name: "Пасха. Светлое Христово Воскресение"),
+        "4.8": Holiday(type: .Celebration, name: "Благовещение Господне"),
+        "4.25": Holiday(type: .Holiday, name: "Св. Марк, Евангелист"),
+        "5.9": Holiday(type: .Celebration, name: "Вознесение Господне"),
+        "5.19": Holiday(type: .Celebration, name: "Сошествие Святого Духа. Пятидесятница"),
+        "5.26": Holiday(type: .Celebration, name: "Персвятая Троица"),
+        "5.31": Holiday(type: .Holiday, name: "Посещение Пресвятой Девой Марией Елизаветы"),
+        "6.2": Holiday(type: .Celebration, name: "Пресвятые Тело и Кровь Господни"),
+        "6.7": Holiday(type: .Celebration, name: "Святейшее Сердце Иисуса"),
+        "6.24": Holiday(type: .Celebration, name: "Рождество св. Иоанна Крестителя"),
+        "6.29": Holiday(type: .Celebration, name: "свв. Пётр и Павел, Апостолы"),
+        "7.22": Holiday(type: .Holiday, name: "Св. Мария Магдалина"),
+        "7.25": Holiday(type: .Holiday, name: "Св. Иаков, Апостол"),
+        "8.6": Holiday(type: .Holiday, name: "Преображение Господне"),
+        "8.10": Holiday(type: .Holiday, name: "Св. Лаврентий, диакон и муч."),
+        "8.15": Holiday(type: .Celebration, name: "Успение Пресвятой Богородицы"),
+        "8.24": Holiday(type: .Holiday, name: "Св. Варфоломей, Апостол"),
+        "9.14": Holiday(type: .Holiday, name: "Воздвижение Святого Креста"),
+        "9.21": Holiday(type: .Holiday, name: "Св. Матфей, Апостол и Евангелист"),
+        "10.18": Holiday(type: .Holiday, name: "Св. Лука, Евангелист"),
+        "10.28": Holiday(type: .Holiday, name: "Свв. Симон и Иуда, Апостолы"),
+        "11.1": Holiday(type: .Celebration, name: "Все Святые"),
+        "11.2": Holiday(type: .MandatoryMemory, name: "Поминовение всех усопших верных"),
+        "11.9": Holiday(type: .Holiday, name: "Освящение Латеранской Базилики"),
+        "11.24": Holiday(type: .Holiday, name: "Господь наш Иисус Христос, Царь Вселенной"),
+        "11.30": Holiday(type: .Celebration, name: "св. Андрей, Апостол"),
+        "12.8": Holiday(type: .Celebration, name: "Непорочное Зачатие Пресвятой Девы Марии"),
+        "12.25": Holiday(type: .Celebration, name: "Рождество Христово"),
+        "12.26": Holiday(type: .Holiday, name: "Св. Стефан, Первомученник"),
+        "12.27": Holiday(type: .Holiday, name: "Св. Иоанн, Апостол и Евангелист"),
+        "12.28": Holiday(type: .Holiday, name: "Свв. младенцы Вифлеемские, мученики"),
+        "12.29": Holiday(type: .Holiday, name: "Святое Семейство - Иисус, Мария и Иосиф"),
+    ].map { (HolidaysHolder.strToOrdinal(str: $0, year: 2024), $1)    })
+    
     private static let dateToHoliday2023: [Int: Holiday] = Dictionary ([
 
         "1.1": Holiday(type: .Celebration, name: "Пресвятая Богородица Мария"),
@@ -374,6 +418,7 @@ class HolidaysHolder {
         2021: dateToHoliday2021,
         2022: dateToHoliday2022,
         2023: dateToHoliday2023,
+        2024: dateToHoliday2024,
 
     ]
 }
