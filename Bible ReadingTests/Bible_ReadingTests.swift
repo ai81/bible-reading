@@ -70,15 +70,15 @@ class Bible_ReadingTests: XCTestCase {
     }
     
     func testAllRefs() throws {
+        let path = Bundle.main.path(forResource: "bibles/ru.proto", ofType: "gz")
+        let bible = BibleReader.read(filename: path!)
         for year in AllRefsPerDayHolder.yearToRefs.keys.sorted(by: >) {
             NSLog("Check year: \(year)")
-            try checkRefs(refs: AllRefsPerDayHolder.yearToRefs[year]!)
+            try checkRefs(refs: AllRefsPerDayHolder.yearToRefs[year]!, bible: bible)
         }
     }
     
-    func checkRefs(refs: [String]) throws {
-        let path = Bundle.main.path(forResource: "bibles/ru.proto", ofType: "gz")
-        let bible = BibleReader.read(filename: path!)
+    func checkRefs(refs: [String], bible: Bible?) throws {
         for ref in refs {
             do {
                 if !ref.isEmpty {
