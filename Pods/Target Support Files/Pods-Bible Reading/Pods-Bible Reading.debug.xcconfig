@@ -1,0 +1,17 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DatePickerDialog" "${PODS_CONFIGURATION_BUILD_DIR}/FontAwesome.swift" "${PODS_CONFIGURATION_BUILD_DIR}/GZIP" "${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DatePickerDialog/DatePickerDialog.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FontAwesome.swift/FontAwesome_swift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GZIP/GZIP.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit/InAppSettingsKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf/SwiftProtobuf.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/DatePickerDialog/DatePickerDialog.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/FontAwesome.swift/FontAwesome_swift.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/GZIP/GZIP.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit/InAppSettingsKit.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf/SwiftProtobuf.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/DatePickerDialog" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/FontAwesome.swift" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/GZIP" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf"
+OTHER_LDFLAGS = $(inherited) -l"z" -framework "CoreText" -framework "DatePickerDialog" -framework "FontAwesome_swift" -framework "GZIP" -framework "InAppSettingsKit" -framework "MessageUI" -framework "SwiftProtobuf" -framework "UIKit"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/DatePickerDialog" "-F${PODS_CONFIGURATION_BUILD_DIR}/FontAwesome.swift" "-F${PODS_CONFIGURATION_BUILD_DIR}/GZIP" "-F${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit" "-F${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

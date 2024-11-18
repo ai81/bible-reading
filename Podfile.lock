@@ -1,0 +1,32 @@
+PODS:
+  - DatePickerDialog (4.0)
+  - FontAwesome.swift (1.9.1)
+  - GZIP (1.3.0)
+  - InAppSettingsKit (3.3.6)
+  - SwiftProtobuf (1.26.0)
+
+DEPENDENCIES:
+  - DatePickerDialog
+  - FontAwesome.swift
+  - GZIP
+  - InAppSettingsKit
+  - SwiftProtobuf (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - DatePickerDialog
+    - FontAwesome.swift
+    - GZIP
+    - InAppSettingsKit
+    - SwiftProtobuf
+
+SPEC CHECKSUMS:
+  DatePickerDialog: ccff2f91ff7a018057a4d72fa5ad6de49c8cb0cd
+  FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
+  GZIP: 416858efbe66b41b206895ac6dfd5493200d95b3
+  InAppSettingsKit: 37df0b44132380d4c7db6fc7cded92997e29873a
+  SwiftProtobuf: 5e8349171e7c2f88f5b9e683cb3cb79d1dc780b3
+
+PODFILE CHECKSUM: f5f73c8955439e2ee67a3ba467895b0517566f81
+
+COCOAPODS: 1.16.1
