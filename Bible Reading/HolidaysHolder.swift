@@ -103,7 +103,7 @@ class HolidaysHolder {
         "12.26": Holiday(type: .Holiday, name: "Св. Стефан, Первомученник"),
         "12.27": Holiday(type: .Holiday, name: "Св. Иоанн, Апостол и Евангелист"),
         "12.28": Holiday(type: .Holiday, name: "Святое Семейство - Иисус, Мария и Иосиф"),
-    ].map { (HolidaysHolder.strToOrdinal(str: $0, year: 2024), $1)    })
+    ].map { (HolidaysHolder.strToOrdinal(str: $0, year: 2025), $1)    })
 
     private static let dateToHoliday2024: [Int: Holiday] = Dictionary ([
 
