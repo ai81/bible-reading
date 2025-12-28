@@ -95,8 +95,8 @@ class Bible_ReadingTests: XCTestCase {
 
     func testHolidaysHolder() throws {
         let cal = Calendar.current
-        let components = DateComponents(year: 2025, month: 1, day: 1, hour: 1)
+        let components = DateComponents(year: 2026, month: 1, day: 1, hour: 1)
         let date = cal.date(from: components)!
-        XCTAssertEqual(HolidaysHolder.findHoliday(date: date)!.name, "Пресвятая Богородица Мария")
+        XCTAssertEqual(HolidaysHolder.findHoliday(date: date)!.name, "Пресвятая Богородица Дева Мария")
     }
 }
